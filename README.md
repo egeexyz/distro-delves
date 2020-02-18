@@ -1,1 +1,56 @@
-# distro-delves
+- **Install & Post-Install**
+    - [ ]  Installer
+    - [ ]  Welcome Screen
+    - [ ]  Disk usage after install
+    - [ ]  Resource Consumption
+    - [ ]  Default Apps
+    - [ ]  Desktop Backgrounds
+- **Updates & Drivers**
+    - [ ]  Basic Update
+    - [ ]  Nvidia Drivers & Restart
+    - [ ]  `systemd-analyze` to check startup times *after-reboot
+    - [ ]  Neofetch
+- **Network & Sharing**
+    - [ ]  External SSD
+    - [ ]  ExFat USB
+    - [ ]  Archive Files
+    - [ ]  File Sharing Options
+        - [ ]  Built-In UPnP/DLNA
+        - [ ]  SFTP/SSH
+        - [ ]  Samba
+    - [ ]  Find Windows machine
+    - [ ]  Find Linux workstation
+    - [ ]  Find Printer
+- **Application Management**
+    - [ ]  3rd Party App Support
+        - [ ]  Snap
+        - [ ]  Flatpak
+        - [ ]  AppImage
+    - [ ]  Media Playback & Codecs
+    - [ ]  Install Apps
+        - [ ]  Repo-Apps
+            - [ ]  Wine
+            - [ ]  Steam
+            - [ ]  Audacity
+            - [ ]  Discord
+            - [ ]  Docker
+            - [ ]  OBS-Studio
+            - [ ]  Virtual Box
+            - [ ]  VSCode
+            - [ ]  Slack
+            - [ ]  Spotify
+            - [ ]  Minecraft
+        - [ ]  3rd Party
+            - [ ]  Lutris (after ppa)
+            - [ ]  Zoom
+            - [ ]  TeamViewer
+- **Gaming Overview**
+    - [ ]  Connect PS4 Controller
+    - [ ]  OBS w NVEC
+    - [ ]  Steam Game
+    - [ ]  Wine Game
+    - [ ]  Native Game
+- **Benchmarks**
+    - [ ]  Geekbench
+        - [ ]  CPU
+        - [ ]  GPU
