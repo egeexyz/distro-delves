@@ -1,5 +1,11 @@
 # The Official Distro Delves Script
 
+Distro Delves is a video series on YouTube reviewing & analyzing Linux distributions in an informational yet entertaining format.
+
+The script below covers regular _desktop use cases_ starting from a fresh install. If you would like to see a change or improvement to the script, feel free to open an [issue](https://github.com/egee-irl/distro-delves/issues) or fork & submit a pull request.
+
+## The Script 📜
+
 - **Install & Post-Install**
   - [ ]  Installer
   - [ ]  Welcome Screen
