@@ -1,0 +1,57 @@
+# MX-19.1
+
+- **Install & Post-Install**
+  - [ ]  Installer
+  - [ ]  Welcome Screen
+  - [ ]  Disk usage after install
+  - [ ]  Resource Consumption
+  - [ ]  Default Apps
+  - [ ]  Desktop Backgrounds
+- **Updates & Drivers**
+  - [ ]  Basic Update
+  - [ ]  Nvidia Drivers & Restart
+  - [ ]  `systemd-analyze` to check startup times *after-reboot
+  - [ ]  Neofetch
+- **Network & Sharing**
+  - [ ]  External SSD
+  - [ ]  ExFat USB
+  - [ ]  Archive Files
+  - [ ]  File Sharing Options
+    - [ ]  Built-In UPnP/DLNA
+    - [ ]  SFTP/SSH
+    - [ ]  Samba
+  - [ ]  Find Windows machine
+  - [ ]  Find Linux workstation
+  - [ ]  Find Printer
+- **Application Management**
+  - [ ]  Media Playback & Codecs
+  - [ ]  3rd Party App Support
+    - [ ]  Snap
+    - [ ]  Flatpak
+    - [ ]  AppImage
+  - [ ]  Install Apps
+    - [ ]  Wine
+    - [ ]  Steam
+    - [ ]  Audacity
+    - [ ]  Discord
+    - [ ]  Docker
+    - [ ]  OBS-Studio
+    - [ ]  Virtual Box
+    - [ ]  VSCode
+    - [ ]  Slack
+    - [ ]  Spotify
+    - [ ]  Minecraft
+    - [ ]  Lutris
+    - [ ]  Zoom
+    - [ ]  TeamViewer
+- **Gaming Overview**
+  - [ ]  Connect PS4 Controller
+  - [ ]  OBS w NVEC
+  - [ ]  Gameplay
+    - [ ]  Steam Game
+    - [ ]  Wine Game
+    - [ ]  Native Game
+- **Benchmarks**
+  - [ ]  Geekbench
+      - [ ]  CPU
+      - [ ]  GPU
