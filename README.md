@@ -24,34 +24,33 @@
   - [ ]  Find Linux workstation
   - [ ]  Find Printer
 - **Application Management**
+  - [ ]  Media Playback & Codecs
   - [ ]  3rd Party App Support
     - [ ]  Snap
     - [ ]  Flatpak
     - [ ]  AppImage
-  - [ ]  Media Playback & Codecs
   - [ ]  Install Apps
-    - [ ]  Repo-Apps
-      - [ ]  Wine
-      - [ ]  Steam
-      - [ ]  Audacity
-      - [ ]  Discord
-      - [ ]  Docker
-      - [ ]  OBS-Studio
-      - [ ]  Virtual Box
-      - [ ]  VSCode
-      - [ ]  Slack
-      - [ ]  Spotify
-      - [ ]  Minecraft
-    - [ ]  3rd Party
-      - [ ]  Lutris (after ppa)
-      - [ ]  Zoom
-      - [ ]  TeamViewer
+    - [ ]  Wine
+    - [ ]  Steam
+    - [ ]  Audacity
+    - [ ]  Discord
+    - [ ]  Docker
+    - [ ]  OBS-Studio
+    - [ ]  Virtual Box
+    - [ ]  VSCode
+    - [ ]  Slack
+    - [ ]  Spotify
+    - [ ]  Minecraft
+    - [ ]  Lutris
+    - [ ]  Zoom
+    - [ ]  TeamViewer
 - **Gaming Overview**
   - [ ]  Connect PS4 Controller
   - [ ]  OBS w NVEC
-  - [ ]  Steam Game
-  - [ ]  Wine Game
-  - [ ]  Native Game
+  - [ ]  Gameplay
+    - [ ]  Steam Game
+    - [ ]  Wine Game
+    - [ ]  Native Game
 - **Benchmarks**
   - [ ]  Geekbench
       - [ ]  CPU
