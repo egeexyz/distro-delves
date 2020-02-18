@@ -1,0 +1,55 @@
+# OpenMandriva Lx 4.1
+
+- **Install & Post-Install**
+  - [x]  Installer
+  - [x]  Welcome Screen
+  - [x]  Disk usage after install
+  - [x]  Resource Consumption
+  - [x]  Default Apps
+  - [x]  Desktop Backgrounds
+- **Updates & Drivers**
+  - [x]  Basic Update
+  - [x]  Nvidia Drivers & Restart
+  - [x]  `systemd-analyze` to check startup times *after-reboot
+  - [x]  Neofetch
+- **Application Management**
+  - [x]  External SSD
+  - [x]  3rd Party App Support
+    - [x]  Snap
+    - [x]  Flatpak
+    - [x]  AppImage
+  - [x]  Media Playback & Codecs
+  - [x]  Install Apps
+    - [x]  Repo-Apps
+      - [x]  Wine
+      - [ ]  Steam
+      - [x]  Audacity
+      - [ ]  Discord
+      - [ ]  Docker
+      - [ ]  OBS-Studio
+      - [ ]  Virtual Box (newest version is from website)
+      - [ ]  VSCode
+      - [ ]  Slack
+      - [ ]  Spotify
+      - [ ]  Minecraft
+      - [x]  Lutris
+      - [ ]  Zoom
+      - [ ]  TeamViewer
+- **Network Sharing**
+  - [ ]  File Sharing Options
+    - [ ]  Built-In UPnP/DLNA
+    - [x]  SFTP/SSH
+    - [x]  Samba
+  - [x]  Find Windows machine
+  - [x]  Find Linux workstation
+  - [x]  Find Printer
+- **Gaming Non-Benchmark**
+  - [x]  Connect PS4 Controller
+  - [ ]  OBS w NVEC
+  - [ ]  Steam
+  - [ ]  Wine
+  - [x]  Native
+- **Benchmarks**
+  - [x]  Geekbench
+    - [x]  CPU
+    - [ ]  GPU

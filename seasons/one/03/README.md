@@ -1,0 +1,44 @@
+# elementaryOS 5.0
+
+- **Basic Install & Setup**
+  - [x]  Installer
+  - [ ]  Welcome Screen
+  - [x]  Basic Update
+  - [x]  Drivers
+    - [x]  Display
+    - [ ]  Firmware?
+- **Application Management**
+  - [x]  Default Apps
+  - [x]  App Management
+    - [x]  Package Manager
+    - [x]  "App Store"
+  - [x]  3rd Party Apps
+    - [x]  Snap
+    - [x]  Flatpak
+    - [x]  AppImage
+  - [x]  Install core apps
+    - [x]  Spotify
+    - [x]  VSCode
+    - [x]  Slack
+    - [x]  Discord
+    - [x]  Steam
+    - [x]  Lutris
+- **Volumes &** **Network Discovery**
+  - [x]  Volumes
+    - [x]  External SSD
+    - [x]  Internal SSD
+  - [x]  File sharing
+  - [x]  Find Windows machine
+  - [x]  Find Linux workstation
+  - [x]  Find Printer
+- **Resource Usage**
+  - [x]  `systemd-analyze` to check startup times
+  - [x]  Disk usage after install
+  - [x]  Running Tasks & Processes
+  - [x]  Memory Consumption
+- **Benchmarks**
+  - [x]  Geekbench5
+  - [x]  Grand Theft Auto 5
+  - [ ]  Tomb Raider 2013
+  - [ ]  CS:GO
+  - [ ]  Unigine Valley

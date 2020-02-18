@@ -1,0 +1,35 @@
+# Ubuntu 18.04
+
+- **Usability**
+  - [x]  Basic Updates
+  - [x]  Drivers
+    - [x]  Display
+    - [x]  Input
+    - [x]  Firmware
+  - [x]  Default Apps
+  - [x]  External Volumes
+    - [x]  External SSD
+    - [x]  Internal HDD
+  - [x]  3rd Party Apps
+    - [x]  Flatpaks, Snap, AppImage
+    - [x]  Chocolatey
+    - [x]  Brew
+  - [x]  Install core apps
+    - [x]  Spotify
+    - [x]  VSCode
+    - [x]  Slack
+    - [x]  Discord
+    - [x]  Steam
+    - [x]  Lutris
+- **Network Discovery**
+  - [x]  Setup file sharing
+  - [x]  Find Mac
+  - [x]  Find Windows machine
+  - [x]  Find Linux workstation
+  - [x]  Find printer on network
+- **Resource Metrics**
+  - [x]  `systemd-analyze` to check startup times
+  - [x]  Avg load
+  - [x]  Avg cpu usage
+  - [x]  Avg memory consumption
+  - [x]  Disk usage after install

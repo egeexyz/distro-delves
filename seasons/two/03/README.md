@@ -1,0 +1,68 @@
+# Feren OS
+
+- **Install & Post-Install**
+  - [x]  Installer
+  - [x]  Welcome Screen
+  - [x]  Disk usage after install
+  - [x]  Resource Consumption
+  - [x]  Default Apps
+    - [ ]  Package Manager
+    - [ ]  Picture Viewer
+    - [ ]  Video Viewer
+    - [ ]  Audio/Music Player
+    - [ ]  Text Editor
+    - [ ]  System Monitor
+    - [ ]  Email
+    - [ ]  Calendar
+    - [ ]  Settings
+    - [ ]  File Browser
+    - [ ]  Web Browser
+  - [x]  Desktop Backgrounds
+- **Updates & Drivers**
+  - [x]  Basic Update
+  - [x]  Nvidia Drivers & Restart
+  - [x]  `systemd-analyze` to check startup times *after-reboot
+  - [x]  Neofetch
+- **Application Management**
+  - [x]  3rd Party App Support
+    - [ ]  Snap
+    - [ ]  Flatpak
+    - [ ]  AppImage
+  - [x]  Media Playback & Codecs
+  - [x]  Install Apps
+    - [ ]  Repo-Apps
+      - [ ]  Wine
+      - [ ]  Steam
+      - [ ]  Audacity
+      - [ ]  Discord
+      - [ ]  Docker
+      - [ ]  OBS-Studio
+      - [ ]  Virtual Box (newest version is from website)
+      - [ ]  VSCode
+      - [ ]  Slack
+      - [ ]  Spotify
+      - [ ]  Minecraft
+    - [ ]  3rd Party
+      - [ ]  Lutris (after ppa)
+      - [ ]  Zoom
+      - [ ]  TeamViewer
+- **Volumes &** **Network Sharing**
+  - [x]  External SSD
+  - [x]  File Sharing Options
+    - [ ]  Built-In UPnP/DLNA
+    - [ ]  SFTP/SSH
+    - [ ]  Samba
+  - [x]  Find Windows machine
+  - [x]  Find Linux workstation
+  - [x]  Find Printer
+- **Gaming Non-Benchmark**
+  - [x]  Connect PS4 Controller
+    - [ ]  Play at least one game with the controller
+  - [x]  OBS w NVEC
+  - [x]  Steam
+  - [x]  Wine
+  - [x]  Native
+- **Benchmarks**
+  - [ ]  Geekbench
+    - [ ]  CPU
+    - [ ]  GPU
