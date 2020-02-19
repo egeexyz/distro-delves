@@ -11,6 +11,8 @@ The script below covers regular **desktop** use cases starting from a fresh inst
   - [ ]  Welcome Screen
   - [ ]  Disk usage after install
   - [ ]  Resource Consumption
+  - [ ]  Custom Tooling
+  - [ ]  Styling/Theme
   - [ ]  Default Apps
   - [ ]  Desktop Backgrounds
 - **Updates & Drivers**
