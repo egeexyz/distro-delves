@@ -21,8 +21,8 @@ The script below covers regular **desktop** use cases starting from a fresh inst
   - [ ]  `systemd-analyze` to check startup times *after-reboot
   - [ ]  Neofetch
 - **Network & Sharing**
-  - [ ]  External SSD
   - [ ]  ExFat USB
+  - [ ]  External SSD
   - [ ]  Archive Files
   - [ ]  File Sharing Options
     - [ ]  Built-In UPnP/DLNA
