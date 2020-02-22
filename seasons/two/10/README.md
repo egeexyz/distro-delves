@@ -1,0 +1,61 @@
+# SparkyLinux 2020.02
+
+- **Install & Resources**
+  - [ ]  Installer
+  - [ ]  Welcome Screen
+  - [ ]  Disk usage after install
+  - [ ]  Resource Consumption
+- **Desktop & Apps**
+  - [ ]  Desktop Environment
+  - [ ]  Style & Theme
+  - [ ]  Desktop Backgrounds
+  - [ ]  Default Apps
+  - [ ]  Custom Tools
+- **Updates & Drivers**
+  - [ ]  System Update
+  - [ ]  Nvidia Drivers
+  - [ ]  Restart
+  - [ ]  systemd-analyze
+  - [ ]  Neofetch
+- **Application Management**
+  - [ ] SD Card
+  - [ ] External SSD
+  - [ ] Archive files
+  - [ ]  Media Playback & Codecs
+  - [ ]  3rd Party App Support
+    - [ ]  Snap
+    - [ ]  Flatpak
+    - [ ]  AppImage
+  - [ ]  Install Apps
+    - [ ]  Steam
+    - [ ]  Audacity
+    - [ ]  Discord
+    - [ ]  OBS-Studio
+    - [ ]  Virtual Box
+    - [ ]  Docker
+    - [ ]  Wine
+    - [ ]  VSCode
+    - [ ]  Slack
+    - [ ]  Spotify
+    - [ ]  Lutris
+    - [ ]  Zoom
+    - [ ]  TeamViewer
+  - [ ]  OBS Record & Playback
+- **Networking**
+  - [ ]  File Sharing Options
+    - [ ]  Built-In UPnP/DLNA
+    - [ ]  SFTP/SSH
+    - [ ]  Samba
+  - [ ]  Find Windows machine
+  - [ ]  Find Linux workstation
+  - [ ]  Find Printer
+  - [ ]  Connect Bluetooth
+- **Gaming Overview**
+  - [ ]  Gameplay
+    - [ ]  Steam Game
+    - [ ]  Wine Game
+    - [ ]  Native Game
+- **Benchmarks**
+  - [ ]  Geekbench
+    - [ ]  CPU
+    - [ ]  GPU
