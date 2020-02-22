@@ -6,19 +6,22 @@ The script below covers _out of the box_ desktop use cases starting from a fresh
 
 ## The Script 📜
 
-- **Install & Post-Install**
+- **Install & Resources**
   - [ ]  Installer
   - [ ]  Welcome Screen
   - [ ]  Disk usage after install
   - [ ]  Resource Consumption
-  - [ ]  Custom Tooling
-  - [ ]  Styling/Theme
-  - [ ]  Default Apps
+- **Desktop & Apps**
+  - [ ]  Desktop Environment
+  - [ ]  Style & Theme
   - [ ]  Desktop Backgrounds
+  - [ ]  Default Apps
+  - [ ]  Custom Tools
 - **Updates & Drivers**
   - [ ]  Basic Update
-  - [ ]  Nvidia Drivers & Restart
-  - [ ]  `systemd-analyze` to check startup times *after-reboot
+  - [ ]  Nvidia Drivers
+  - [ ]  Restart
+  - [ ]  systemd-analyze
   - [ ]  Neofetch
 - **Network & Sharing**
   - [ ]  ExFat USB
