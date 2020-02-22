@@ -18,11 +18,35 @@ The script below covers _out of the box_ desktop use cases starting from a fresh
   - [ ]  Default Apps
   - [ ]  Custom Tools
 - **Updates & Drivers**
-  - [ ]  Basic Update
+  - [ ]  System Update
   - [ ]  Nvidia Drivers
   - [ ]  Restart
   - [ ]  systemd-analyze
   - [ ]  Neofetch
+- **Application Management**
+  - [ ] SD Card
+  - [ ] External SSD
+  - [ ] Archive files
+  - [ ]  Media Playback & Codecs
+  - [ ]  3rd Party App Support
+    - [ ]  Snap
+    - [ ]  Flatpak
+    - [ ]  AppImage
+  - [ ]  Install Apps
+    - [ ]  Steam
+    - [ ]  Audacity
+    - [ ]  Discord
+    - [ ]  OBS-Studio
+    - [ ]  Virtual Box
+    - [ ]  Docker
+    - [ ]  Wine
+    - [ ]  VSCode
+    - [ ]  Slack
+    - [ ]  Spotify
+    - [ ]  Lutris
+    - [ ]  Zoom
+    - [ ]  TeamViewer
+  - [ ]  OBS Record & Playback
 - **Network & Sharing**
   - [ ]  ExFat USB
   - [ ]  External SSD
@@ -34,30 +58,8 @@ The script below covers _out of the box_ desktop use cases starting from a fresh
   - [ ]  Find Windows machine
   - [ ]  Find Linux workstation
   - [ ]  Find Printer
-- **Application Management**
-  - [ ]  Media Playback & Codecs
-  - [ ]  3rd Party App Support
-    - [ ]  Snap
-    - [ ]  Flatpak
-    - [ ]  AppImage
-  - [ ]  Install Apps
-    - [ ]  Wine
-    - [ ]  Steam
-    - [ ]  Audacity
-    - [ ]  Discord
-    - [ ]  Docker
-    - [ ]  OBS-Studio
-    - [ ]  Virtual Box
-    - [ ]  VSCode
-    - [ ]  Slack
-    - [ ]  Spotify
-    - [ ]  Minecraft
-    - [ ]  Lutris
-    - [ ]  Zoom
-    - [ ]  TeamViewer
 - **Gaming Overview**
   - [ ]  Connect PS4 Controller
-  - [ ]  OBS w NVEC
   - [ ]  Gameplay
     - [ ]  Steam Game
     - [ ]  Wine Game
