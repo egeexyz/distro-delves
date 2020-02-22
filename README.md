@@ -47,10 +47,7 @@ The script below covers _out of the box_ desktop use cases starting from a fresh
     - [ ]  Zoom
     - [ ]  TeamViewer
   - [ ]  OBS Record & Playback
-- **Network & Sharing**
-  - [ ]  ExFat USB
-  - [ ]  External SSD
-  - [ ]  Archive Files
+- **Networking**
   - [ ]  File Sharing Options
     - [ ]  Built-In UPnP/DLNA
     - [ ]  SFTP/SSH
@@ -58,13 +55,13 @@ The script below covers _out of the box_ desktop use cases starting from a fresh
   - [ ]  Find Windows machine
   - [ ]  Find Linux workstation
   - [ ]  Find Printer
+  - [ ]  Connect Bluetooth
 - **Gaming Overview**
-  - [ ]  Connect PS4 Controller
   - [ ]  Gameplay
     - [ ]  Steam Game
     - [ ]  Wine Game
     - [ ]  Native Game
 - **Benchmarks**
   - [ ]  Geekbench
-      - [ ]  CPU
-      - [ ]  GPU
+    - [ ]  CPU
+    - [ ]  GPU
