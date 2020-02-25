@@ -1,61 +1,59 @@
 # SparkyLinux 2020.02
 
 - **Install & Resources**
-  - [ ]  Installer
-  - [ ]  Welcome Screen
-  - [ ]  Disk usage after install
-  - [ ]  Resource Consumption
+  - [x]  Installer
+  - [x]  Welcome Screen
+  - [x]  Disk usage after install -- 5.7gb
+  - [x]  Resource Consumption -- 441mb, 74 tasks, 124 threads
 - **Desktop & Apps**
-  - [ ]  Desktop Environment
-  - [ ]  Style & Theme
-  - [ ]  Desktop Backgrounds
-  - [ ]  Default Apps
-  - [ ]  Custom Tools
+  - [x]  Desktop Environment -- Mate 1.24
+  - [x]  Style & Theme
+  - [x]  Desktop Backgrounds
+  - [x]  Default Apps
+  - [x]  Custom Tools
 - **Updates & Drivers**
-  - [ ]  System Update
+  - [x]  System Update
   - [ ]  Nvidia Drivers
-  - [ ]  Restart
-  - [ ]  systemd-analyze
+  - [x]  systemd-analyze -- 30s
   - [ ]  Neofetch
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ]  Media Playback & Codecs
-  - [ ]  3rd Party App Support
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x]  Media Playback & Codecs -- some video playback was sluggish
+  - [x]  3rd Party App Support
     - [ ]  Snap
     - [ ]  Flatpak
     - [ ]  AppImage
   - [ ]  Install Apps
-    - [ ]  Steam
-    - [ ]  Audacity
-    - [ ]  Discord
-    - [ ]  OBS-Studio
-    - [ ]  Virtual Box
-    - [ ]  Docker
-    - [ ]  Wine
+    - [x]  Steam
+    - [x]  Audacity
+    - [x]  Discord
+    - [x]  OBS-Studio
+    - [x]  Virtual Box
+    - [x]  Docker
+    - [x]  Wine
     - [ ]  VSCode
     - [ ]  Slack
-    - [ ]  Spotify
-    - [ ]  Lutris
+    - [x]  Spotify
+    - [x]  Lutris
     - [ ]  Zoom
-    - [ ]  TeamViewer
-  - [ ]  OBS Record & Playback
+    - [x]  TeamViewer
+  - [x]  OBS Record & Playback
 - **Networking**
   - [ ]  File Sharing Options
     - [ ]  Built-In UPnP/DLNA
-    - [ ]  SFTP/SSH
-    - [ ]  Samba
-  - [ ]  Find Windows machine
-  - [ ]  Find Linux workstation
-  - [ ]  Find Printer
-  - [ ]  Connect Bluetooth
+    - [x]  SFTP/SSH
+    - [ ]  Samba -- user permissions issue
+  - [x]  Find Windows machine
+  - [x]  Find Linux workstation
+  - [x]  Find Printer -- printer required root to modify
+  - [ ]  Connect Bluetooth -- missing bluetooth gui
 - **Gaming Overview**
-  - [ ]  Gameplay
-    - [ ]  Steam Game
-    - [ ]  Wine Game
-    - [ ]  Native Game
+  - [x]  Gameplay
+    - [x]  2D Game
+    - [x]  3D Game -- poor fps
 - **Benchmarks**
-  - [ ]  Geekbench
-    - [ ]  CPU
+  - [x]  Geekbench
+    - [x]  CPU -- https://browser.geekbench.com/v5/cpu/1291170
     - [ ]  GPU
