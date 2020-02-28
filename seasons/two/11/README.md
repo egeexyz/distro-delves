@@ -1,60 +1,60 @@
-# hmm
+# Netrunner
 
 - **Install & Resources**
-  - [ ]  Installer
-  - [ ]  Welcome Screen
-  - [ ]  Disk usage after install
-  - [ ]  Resource Consumption
+  - [x]  Installer
+  - [ ]  Welcome App
+  - [x]  Disk usage after install -- 7.5gb
+  - [x]  Resource Consumption -- 93/119
 - **Desktop & Apps**
-  - [ ]  Desktop Environment
-  - [ ]  Style & Theme
-  - [ ]  Desktop Backgrounds
-  - [ ]  Default Apps
-  - [ ]  Custom Tools
+  - [x]  Desktop Environment
+  - [x]  Style & Theme
+  - [x]  Desktop Backgrounds
+  - [x]  Default Apps
+  - [x]  Custom Tools
 - **Updates & Drivers**
-  - [ ]  System Update
-  - [ ]  Nvidia Drivers
+  - [x]  System Update
+  - [x]  Nvidia Drivers
   - [ ]  Start-up Time
-  - [ ]  Neofetch
+  - [x]  Neofetch
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ]  Media Playback & Codecs
-  - [ ]  3rd Party App Support
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x]  Media Playback & Codecs
+  - [x]  3rd Party App Support
     - [ ]  Snap
     - [ ]  Flatpak
-    - [ ]  AppImage
-  - [ ]  Install Apps
-    - [ ]  Steam
-    - [ ]  Audacity
+    - [x]  AppImage
+  - [x]  Install Apps
+    - [x]  Steam
+    - [x]  Audacity
     - [ ]  Discord
-    - [ ]  OBS-Studio
+    - [x]  OBS-Studio
     - [ ]  Virtual Box
-    - [ ]  Docker
-    - [ ]  Wine
+    - [x]  Docker
+    - [x]  Wine
     - [ ]  VSCode
     - [ ]  Slack
     - [ ]  Spotify
     - [ ]  Lutris
     - [ ]  Zoom
     - [ ]  TeamViewer
-  - [ ]  OBS Record & Playback
+  - [x]  OBS Record & Playback
 - **Networking**
-  - [ ]  File Sharing Options
+  - [x]  File Sharing Options
     - [ ]  Built-In UPnP/DLNA
     - [ ]  SFTP/SSH
     - [ ]  Samba
   - [ ]  Find Windows machine
   - [ ]  Find Linux workstation
-  - [ ]  Find Printer
-  - [ ]  Connect Bluetooth
+  - [x]  Find Printer
+  - [x]  Connect Bluetooth
 - **Gaming Overview**
   - [ ]  Gameplay
-    - [ ]  Steam Game
-    - [ ]  Wine Game
-    - [ ]  Native Game
+    - [x]  Steam Game -- Mad Max
+    - [x]  Wine Game -- Overwatch
+    - [x]  Native Game -- Red Eclipse
 - **Benchmarks**
-  - [ ]  Geekbench
-    - [ ]  CPU
-    - [ ]  GPU
+  - [x]  Geekbench
+    - [x]  CPU -- https://browser.geekbench.com/v5/cpu/1304903
+    - [x]  GPU -- https://browser.geekbench.com/v5/compute/560438
