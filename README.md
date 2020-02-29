@@ -9,31 +9,31 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
 ## The Script 📜
 
 - **Install & Resources**
-  - [ ]  Installer
-  - [ ]  Welcome Screen
-  - [ ]  Disk usage after install
-  - [ ]  Resource Consumption
+  - [ ] Installer
+  - [ ] Welcome App
+  - [ ] Disk Usage
+  - [ ] Resource Usage
 - **Desktop & Apps**
-  - [ ]  Desktop Environment
-  - [ ]  Style & Theme
-  - [ ]  Desktop Backgrounds
-  - [ ]  Default Apps
-  - [ ]  Custom Tools
+  - [ ] Desktop Environment
+    - [ ] Style & Theme
+    - [ ] Backgrounds
+  - [ ] Default Apps
+  - [ ] Custom Tools
 - **Updates & Drivers**
-  - [ ]  System Update
-  - [ ]  Nvidia Drivers
-  - [ ]  Start-up Time
-  - [ ]  Neofetch
+  - [ ] System Update
+  - [ ] Nvidia Drivers
+  - [ ] Start-up Time -- Not currently used, https://github.com/egee-irl/distro-delves/issues/6
+  - [ ] Neofetch
 - **Application Management**
   - [ ] SD Card
   - [ ] External SSD
   - [ ] Archive files
-  - [ ]  Media Playback & Codecs
-  - [ ]  3rd Party App Support
-    - [ ]  Snap
-    - [ ]  Flatpak
-    - [ ]  AppImage
-  - [ ]  Install Apps
+  - [ ] Media Playback
+  - [ ] 3rd Party App Support
+    - [ ] Snap
+    - [ ] Flatpak
+    - [ ] AppImage
+  - [ ] Install Apps
     - [ ]  Steam
     - [ ]  Audacity
     - [ ]  Discord
@@ -47,22 +47,18 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
     - [ ]  Lutris
     - [ ]  Zoom
     - [ ]  TeamViewer
-  - [ ]  OBS Record & Playback
+  - [ ] OBS Record & Playback
 - **Networking**
-  - [ ]  File Sharing Options
-    - [ ]  Built-In UPnP/DLNA
-    - [ ]  SFTP/SSH
-    - [ ]  Samba
-  - [ ]  Find Windows machine
-  - [ ]  Find Linux workstation
-  - [ ]  Find Printer
-  - [ ]  Connect Bluetooth
+  - [ ] Sharing
+  - [ ] Discovery
+  - [ ] Windows machine
+  - [ ] Linux workstation
+  - [ ] Printer
+  - [ ] Bluetooth
 - **Gaming Overview**
-  - [ ]  Gameplay
-    - [ ]  Steam Game
-    - [ ]  Wine Game
-    - [ ]  Native Game
+  - [ ] Steam Game
+  - [ ] Wine Game
+  - [ ] OSS Game
 - **Benchmarks**
-  - [ ]  Geekbench
-    - [ ]  CPU
-    - [ ]  GPU
+  - [ ] CPU
+  - [ ] GPU
