@@ -1,56 +1,55 @@
 # Manjaro 19.0
 
 - **Install & Resources**
-  - [ ] Installer
-  - [ ] Welcome App
-  - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [x] Installer
+  - [x] Welcome App
+  - [x] Disk Usage -- 6.3gb
+  - [x] Resource Usage -- 641mb 75/136
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
+  - [x] Desktop Environment -- Xfce 4.14
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
 - **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
-  - [ ] Neofetch
+  - [x] System Update
+  - [x] Nvidia Drivers -- 440
+  - [x] Neofetch
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] 3rd Party App Support
-    - [ ] Snap
-    - [ ] Flatpak
-    - [ ] AppImage
-  - [ ] Install Apps
-    - [ ]  Steam
-    - [ ]  Audacity
-    - [ ]  Discord
-    - [ ]  OBS-Studio
-    - [ ]  Virtual Box
-    - [ ]  Docker
-    - [ ]  Wine
-    - [ ]  VSCode
-    - [ ]  Slack
-    - [ ]  Spotify
-    - [ ]  Lutris
-    - [ ]  Zoom
-    - [ ]  TeamViewer
-  - [ ] OBS Record & Playback
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x] Media Playback
+  - [x] 3rd Party App Support -- Bauh is not good
+    - [x] Snap -- Native support in Pamac
+    - [x] Flatpak
+    - [x] AppImage
+  - [x] Install Apps
+    - [x]  Steam
+    - [x]  Audacity
+    - [x]  Discord
+    - [x]  OBS-Studio
+    - [x]  Virtual Box
+    - [x]  Docker
+    - [x]  Wine
+    - [x]  VSCode
+    - [x]  Slack
+    - [x]  Spotify
+    - [x]  Lutris
+    - [x]  Zoom
+    - [x]  TeamViewer
+  - [x] OBS Record & Playback
 - **Networking**
-  - [ ] Sharing
-  - [ ] Discovery
-  - [ ] Windows machine
-  - [ ] Linux workstation
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] Sharing
+  - [] Discovery
+  - [x] Windows machine
+  - [x] Linux workstation
+  - [x] Printer -- Janky, no printer app
+  - [x] Bluetooth -- Also janky
 - **Gaming Overview**
-  - [ ] Steam Game
-  - [ ] Wine Game
-  - [ ] OSS Game
+  - [x] Steam Game -- Madmax
+  - [x] Wine Game -- Overwatch
+  - [x] OSS Game -- Cube2
 - **Benchmarks**
-  - [ ] CPU
-  - [ ] GPU
-
+  - [x] CPU - https://browser.geekbench.com/v5/cpu/1342549
+  - [x] GPU - https://browser.geekbench.com/v5/compute/575234
