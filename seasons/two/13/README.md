@@ -1,0 +1,43 @@
+# Zorin 15.2
+
+- **Install & Resources**
+  - [] Installer
+  - [] Welcome App
+  - [] Disk Usage --
+  - [] Resource Usage --
+- **Desktop & Apps**
+  - [] Desktop Environment --
+    - [] Style & Theme
+    - [] Backgrounds
+  - [] Default Apps
+  - [] Custom Tools
+- **Updates & Drivers**
+  - [] System Update
+  - [] Nvidia Drivers --
+  - [] Neofetch
+- **Application Management**
+  - [] SD Card
+  - [] External SSD
+  - [] Archive files
+  - [] Media Playback
+  - [] 3rd Party App Support
+    - [] Snap
+    - [] Flatpak
+    - [] AppImage
+  - [] Install Apps
+    - []  Lutris
+  - [] OBS Record & Playback
+- **Networking**
+  - [] Sharing
+  - [] Discovery
+  - [] Windows machine
+  - [] Linux workstation
+  - [] Printer
+  - [] Bluetooth
+- **Gaming Overview**
+  - [] Steam Game --
+  - [] Wine Game --
+  - [] OSS Game --
+- **Benchmarks**
+  - [] CPU --
+  - [] GPU --
