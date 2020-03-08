@@ -19,11 +19,11 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
     - [ ] Backgrounds
   - [ ] Default Apps
   - [ ] Custom Tools
+  - [ ] Neofetch
 - **Updates & Drivers**
   - [ ] System Update
   - [ ] Nvidia Drivers
   - [ ] Start-up Time -- Not currently used, https://github.com/egee-irl/distro-delves/issues/6
-  - [ ] Neofetch
 - **Application Management**
   - [ ] SD Card
   - [ ] External SSD
@@ -33,20 +33,7 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
     - [ ] Snap
     - [ ] Flatpak
     - [ ] AppImage
-  - [ ] Install Apps
-    - [ ]  Steam
-    - [ ]  Audacity
-    - [ ]  Discord
-    - [ ]  OBS-Studio
-    - [ ]  Virtual Box
-    - [ ]  Docker
-    - [ ]  Wine
-    - [ ]  VSCode
-    - [ ]  Slack
-    - [ ]  Spotify
-    - [ ]  Lutris
-    - [ ]  Zoom
-    - [ ]  TeamViewer
+  - [ ] Install Apps -- Not currenly used, https://github.com/egee-irl/distro-delves/issues/7
   - [ ] OBS Record & Playback
 - **Networking**
   - [ ] Sharing
