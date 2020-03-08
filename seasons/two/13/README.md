@@ -1,43 +1,39 @@
 # Zorin 15.2
 
 - **Install & Resources**
-  - [] Installer
+  - [x] Installer
   - [] Welcome App
-  - [] Disk Usage --
-  - [] Resource Usage --
+  - [x] Disk Usage -- 8.6gb
+  - [x] Resource Usage -- 1gb memory, 146/**312**
 - **Desktop & Apps**
-  - [] Desktop Environment --
-    - [] Style & Theme
-    - [] Backgrounds
-  - [] Default Apps
-  - [] Custom Tools
+  - [x] Desktop Environment -- Gnome 3.30 with custom panel
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
 - **Updates & Drivers**
-  - [] System Update
-  - [] Nvidia Drivers --
-  - [] Neofetch
+  - [x] System Update
+  - [x] Nvidia Drivers -- 440.59
+  - [x] Neofetch
 - **Application Management**
-  - [] SD Card
-  - [] External SSD
-  - [] Archive files
-  - [] Media Playback
-  - [] 3rd Party App Support
-    - [] Snap
-    - [] Flatpak
-    - [] AppImage
-  - [] Install Apps
-    - []  Lutris
-  - [] OBS Record & Playback
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files -- No Rar support
+  - [x] Media Playback
+  - [x] 3rd Party App Support
+    - [x] Snap
+    - [x] Flatpak
+    - [x] AppImage
+  - [x] OBS Record & Playback
 - **Networking**
-  - [] Sharing
+  - [x] Sharing -- semi-worked
   - [] Discovery
-  - [] Windows machine
-  - [] Linux workstation
-  - [] Printer
-  - [] Bluetooth
-- **Gaming Overview**
-  - [] Steam Game --
-  - [] Wine Game --
-  - [] OSS Game --
+  - [x] Windows machine
+  - [x] Linux workstation
+  - [x] Printer
+  - [x] Bluetooth -- Crashed during test
 - **Benchmarks**
-  - [] CPU --
-  - [] GPU --
+  - [x] GTA 5 -- 12fps
+  - [x] Mad Max -- 28fps
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1382145
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/591002
