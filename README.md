@@ -38,8 +38,8 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
 - **Networking**
   - [ ] Sharing
   - [ ] Discovery
-  - [ ] Windows machine
-  - [ ] Linux workstation
+    - [ ] Windows laptop
+    - [ ] Linux workstation
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
