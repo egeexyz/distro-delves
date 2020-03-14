@@ -1,4 +1,4 @@
-# Zorin 15.2
+# Zorin Core 15.2
 
 - **Install & Resources**
   - [x] Installer
