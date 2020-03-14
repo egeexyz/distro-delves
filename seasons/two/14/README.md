@@ -1,39 +1,32 @@
-# Yeet📜
+# Zorin Lite 15.2
 
 - **Install & Resources**
-  - [ ] Installer
+  - [x] Installer
   - [ ] Welcome App
-  - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [x] Disk Usage -- 8.8gb
+  - [x] Resource Usage -- 723mb, 89/137
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
-  - [ ] Neofetch
-- **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] 3rd Party App Support
-    - [ ] Snap
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x] Media Playback
+  - [x] 3rd Party App Support
+    - [x] Snap
     - [ ] Flatpak
-    - [ ] AppImage
-  - [ ] OBS Record & Playback
+    - [x] AppImage
+  - [x] OBS Record & Playback
 - **Networking**
   - [ ] Sharing
-  - [ ] Discovery
-    - [ ] Windows laptop
-    - [ ] Linux workstation
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] Printer
+  - [ ] Bluetooth -- Not functional
 - **Benchmarks**
-  - [ ] GTA 5 --
-  - [ ] Mad Max --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [x] GTA 5 -- 12fps
+  - [x] Mad Max -- 28fps
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1450355
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/615617
