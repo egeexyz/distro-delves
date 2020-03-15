@@ -1,32 +1,39 @@
-# Zorin Lite 15.2
+# GhostBSD 20.02
 
 - **Install & Resources**
-  - [x] Installer
+  - [ ] Installer
   - [ ] Welcome App
-  - [x] Disk Usage -- 8.8gb
-  - [x] Resource Usage -- 723mb, 89/137
+  - [ ] Disk Usage
+  - [ ] Resource Usage
 - **Desktop & Apps**
-  - [x] Desktop Environment
-    - [x] Style & Theme
-    - [x] Backgrounds
-  - [x] Default Apps
-  - [x] Custom Tools
+  - [ ] Desktop Environment
+    - [ ] Style & Theme
+    - [ ] Backgrounds
+  - [ ] Default Apps
+  - [ ] Custom Tools
+  - [ ] Neofetch
+- **Updates & Drivers**
+  - [ ] System Update
+  - [ ] Nvidia Drivers
 - **Application Management**
-  - [x] SD Card
-  - [x] External SSD
-  - [x] Archive files
-  - [x] Media Playback
-  - [x] 3rd Party App Support
-    - [x] Snap
+  - [ ] SD Card
+  - [ ] External SSD
+  - [ ] Archive files
+  - [ ] Media Playback
+  - [ ] 3rd Party App Support
+    - [ ] Snap
     - [ ] Flatpak
-    - [x] AppImage
-  - [x] OBS Record & Playback
+    - [ ] AppImage
+  - [ ] OBS Record & Playback
 - **Networking**
   - [ ] Sharing
-  - [x] Printer
-  - [ ] Bluetooth -- Not functional
+  - [ ] Discovery
+    - [ ] Windows laptop
+    - [ ] Linux workstation
+  - [ ] Printer
+  - [ ] Bluetooth
 - **Benchmarks**
-  - [x] GTA 5 -- 12fps
-  - [x] Mad Max -- 28fps
-  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1450355
-  - [x] GPU -- https://browser.geekbench.com/v5/compute/615617
+  - [ ] GTA 5 --
+  - [ ] Mad Max --
+  - [ ] CPU --
+  - [ ] GPU --

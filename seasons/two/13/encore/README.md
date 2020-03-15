@@ -1,0 +1,32 @@
+# Zorin Lite 15.2
+
+- **Install & Resources**
+  - [x] Installer
+  - [ ] Welcome App
+  - [x] Disk Usage -- 8.8gb
+  - [x] Resource Usage -- 723mb, 89/137
+- **Desktop & Apps**
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
+- **Application Management**
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x] Media Playback
+  - [x] 3rd Party App Support
+    - [x] Snap
+    - [ ] Flatpak
+    - [x] AppImage
+  - [x] OBS Record & Playback
+- **Networking**
+  - [ ] Sharing
+  - [x] Printer
+  - [ ] Bluetooth -- Not functional
+- **Benchmarks**
+  - [x] GTA 5 -- 12fps
+  - [x] Mad Max -- 28fps
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1450355
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/615617
