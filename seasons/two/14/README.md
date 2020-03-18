@@ -1,39 +1,39 @@
 # GhostBSD 20.02
 
 - **Install & Resources**
-  - [ ] Installer
+  - [x] Installer
   - [ ] Welcome App
-  - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [x] Disk Usage -- 3.5gb
+  - [x] Resource Usage -- 800mb, 81/0
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
-  - [ ] Neofetch
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
+  - [x] Neofetch
 - **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
+  - [x] System Update
+  - [x] Nvidia Drivers --
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
+  - [ ] SD Card -- Refused to mount
+  - [ ] External SSD -- Refused to mount
+  - [x] Archive files -- Non rar support
+  - [x] Media Playback
   - [ ] 3rd Party App Support
     - [ ] Snap
     - [ ] Flatpak
     - [ ] AppImage
-  - [ ] OBS Record & Playback
+  - [ ] OBS Record & Playback -- No NVEC, refused to record
 - **Networking**
-  - [ ] Sharing
+  - [ ] Sharing -- Samba was broken
   - [ ] Discovery
-    - [ ] Windows laptop
-    - [ ] Linux workstation
-  - [ ] Printer
-  - [ ] Bluetooth
+    - [x] Windows laptop
+    - [x] Linux workstation
+  - [ ] Printer -- Can be installed, not discovered
+  - [ ] Bluetooth -- No support
 - **Benchmarks**
-  - [ ] GTA 5 --
-  - [ ] Mad Max --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [ ] GTA 5 -- Not supported
+  - [ ] Mad Max -- Not supported
+  - [ ] CPU -- Not supported
+  - [ ] GPU -- Not supported
