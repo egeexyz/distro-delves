@@ -29,17 +29,16 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
   - [ ] External SSD
   - [ ] Archive files
   - [ ] Media Playback
-  - [ ] 3rd Party App Support
+  - [ ] Install Apps
+    - [ ] Repos
     - [ ] Snap
     - [ ] Flatpak
     - [ ] AppImage
-  - [ ] Install Apps -- Not currenly used, https://github.com/egee-irl/distro-delves/issues/7
   - [ ] OBS Record & Playback
 - **Networking**
-  - [ ] Sharing
+  - [ ] DLNA/Samba Sharing
   - [ ] Discovery
-    - [ ] Windows laptop
-    - [ ] Linux workstation
+  - [ ] Direct Connect
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
