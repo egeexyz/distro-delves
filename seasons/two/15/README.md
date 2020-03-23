@@ -1,40 +1,38 @@
-# Mint
+# LMDE
 
 - **Install & Resources**
-  - [ ] Installer
-  - [ ] Welcome App
-  - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [x] Installer
+  - [x] Welcome App
+  - [x] Disk Usage -- 5.6gb
+  - [x] Resource Usage -- 831mb 103/210
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
-  - [ ] Neofetch
-- **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
-  - [ ] Start-up Time -- Not currently used, https://github.com/egee-irl/distro-delves/issues/6
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
+  - [x] Neofetch
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] Install Apps
-    - [ ] Repos
+  - [x] Nvidia Drivers
+  - [x] System Update
+  - [x] Install Apps
+    - [x] Repos
     - [ ] Snap
-    - [ ] Flatpak
-    - [ ] AppImage
+    - [x] Flatpak
+    - [x] AppImage
   - [ ] OBS Record & Playback
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files -- no rar
+  - [x] Media Playback
 - **Networking**
   - [ ] DLNA/Samba Sharing
   - [ ] Discovery
-  - [ ] Direct Connect
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] Direct Connect
+  - [x] Printer -- required root
+  - [x] Bluetooth
 - **Benchmarks**
-  - [ ] GTA 5 --
-  - [ ] Mad Max --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1536128
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/648260
+  - [x] GTA 5 -- 12
+  - [x] Mad Max -- 28
