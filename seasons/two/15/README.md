@@ -15,7 +15,6 @@
 - **Updates & Drivers**
   - [ ] System Update
   - [ ] Nvidia Drivers
-  - [ ] Start-up Time -- Not currently used, https://github.com/egee-irl/distro-delves/issues/6
 - **Application Management**
   - [ ] SD Card
   - [ ] External SSD
