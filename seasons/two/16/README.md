@@ -1,40 +1,39 @@
-# ;-)
+# Endless OS 3.7
 
 - **Install & Resources**
-  - [ ] Installer
-  - [ ] Welcome App
-  - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [x] Installer
+  - [x] Welcome App
+  - [x] Disk Usage -- 8gb or 26gb
+  - [x] Resource Usage -- 924mb 99/224
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
   - [ ] Neofetch
 - **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
+  - [x] System Update
+  - [x] Nvidia Drivers
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] Install Apps
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files
+  - [x] Media Playback -- Video playback was real bad
+  - [x] Install Apps
     - [ ] Repos
     - [ ] Snap
-    - [ ] Flatpak
+    - [x] Flatpak
     - [ ] AppImage
-  - [ ] OBS Record & Playback
+  - [x] OBS Record & Playback -- No nvenc
 - **Networking**
   - [ ] DLNA/Samba Sharing
   - [ ] Discovery
-  - [ ] Direct Connect
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] Direct Connect
+  - [x] Printer -- Required root?
+  - [x] Bluetooth
 - **Benchmarks**
-  - [ ] GTA 5 --
-  - [ ] Mad Max --
-  - [ ] Grid --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [ ] GTA 5 -- NA
+  - [ ] Mad Max -- Unable to install
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1590048
+  - [ ] GPU -- No Vulkan
