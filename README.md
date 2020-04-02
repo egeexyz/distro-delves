@@ -41,7 +41,6 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
-  - [ ] GTA 5 --
+  - [ ] Geekbench --
   - [ ] Mad Max --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [ ] GTA 5 --
