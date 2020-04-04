@@ -1,39 +1,39 @@
-# 
+# openSUSE Tumbleweed
 
 - **Install & Resources**
-  - [ ] Installer
-  - [ ] Welcome App
-  - [ ] Disk Usage --
-  - [ ] Resource Usage --
+  - [x] Installer
+  - [x] Welcome App
+  - [x] Disk Usage --
+  - [x] Resource Usage --
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
-  - [ ] Neofetch
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
+  - [x] Neofetch
 - **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers --
+  - [x] System Update
+  - [x] Nvidia Drivers --
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] Install Apps
-    - [ ] Repos
+  - [x] SD Card
+  - [x] External SSD
+  - [x] Archive files -- no rar
+  - [ ] Media Playback -- only webm video playback
+  - [x] Install Apps
+    - [x] Repos
     - [ ] Snap
     - [ ] Flatpak
-    - [ ] AppImage
-  - [ ] OBS Record & Playback
+    - [x] AppImage
+  - [ ] OBS Record & Playback -- couldnt open any of the files
 - **Networking**
-  - [ ] DLNA/Samba Sharing
+  - [ ] DLNA/Samba Sharing -- complicated via yast
   - [ ] Discovery
-  - [ ] Direct Connect
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] Direct Connect
+  - [ ] Printer -- complicated via yast
+  - [x] Bluetooth
 - **Benchmarks**
-  - [ ] GTA 5 --
-  - [ ] Mad Max --
-  - [ ] CPU --
-  - [ ] GPU --
+  - [x] GTA 5 -- 12
+  - [x] Mad Max -- 27
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1640380
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/692154
