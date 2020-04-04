@@ -1,0 +1,39 @@
+# Linox
+
+- **Install & Resources**
+  - [ ] Installer
+  - [ ] Welcome App
+  - [ ] Disk Usage -- gb
+  - [ ] Resource Usage -- mb - /
+- **Desktop & Apps**
+  - [ ] Desktop Environment
+    - [ ] Style & Theme
+    - [ ] Backgrounds
+  - [ ] Default Apps
+  - [ ] Custom Tools
+  - [ ] Neofetch
+- **Updates & Drivers**
+  - [ ] System Update
+  - [ ] Nvidia Drivers -- 
+- **Application Management**
+  - [ ] SD Card
+  - [ ] External SSD
+  - [ ] Archive files
+  - [ ] Media Playback
+  - [ ] Install Apps
+    - [ ] Repos
+    - [ ] Snap
+    - [ ] Flatpak
+    - [ ] AppImage
+  - [ ] OBS Record & Playback
+- **Networking**
+  - [ ] DLNA/Samba Sharing
+  - [ ] Discovery
+  - [ ] Direct Connect
+  - [ ] Printer
+  - [ ] Bluetooth
+- **Benchmarks**
+  - [ ] GTA 5 -- 
+  - [ ] Mad Max -- 
+  - [ ] CPU -- https://browser.geekbench.com/v5/cpu/
+  - [ ] GPU -- https://browser.geekbench.com/v5/compute/
