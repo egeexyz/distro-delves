@@ -3,8 +3,8 @@
 - **Install & Resources**
   - [x] Installer
   - [x] Welcome App
-  - [x] Disk Usage --
-  - [x] Resource Usage --
+  - [x] Disk Usage -- 4.8gb
+  - [x] Resource Usage -- 710mb - 74/138
 - **Desktop & Apps**
   - [x] Desktop Environment
     - [x] Style & Theme
@@ -14,7 +14,7 @@
   - [x] Neofetch
 - **Updates & Drivers**
   - [x] System Update
-  - [x] Nvidia Drivers --
+  - [x] Nvidia Drivers -- 440
 - **Application Management**
   - [x] SD Card
   - [x] External SSD
