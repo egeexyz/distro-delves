@@ -1,39 +1,39 @@
-# Linox
+# MakuluLinux Flash
 
 - **Install & Resources**
-  - [ ] Installer
-  - [ ] Welcome App
-  - [ ] Disk Usage -- gb
-  - [ ] Resource Usage -- mb - /
+  - [x] Installer
+  - [x] Welcome App
+  - [x] Disk Usage -- 9.3gb
+  - [x] Resource Usage -- 870mb - 109/199
 - **Desktop & Apps**
-  - [ ] Desktop Environment
-    - [ ] Style & Theme
-    - [ ] Backgrounds
-  - [ ] Default Apps
-  - [ ] Custom Tools
-  - [ ] Neofetch
+  - [x] Desktop Environment
+    - [x] Style & Theme
+    - [x] Backgrounds
+  - [x] Default Apps
+  - [x] Custom Tools
+  - [x] Neofetch
 - **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers -- 
+  - [x] System Update
+  - [x] Nvidia Drivers -- 440.64
 - **Application Management**
-  - [ ] SD Card
-  - [ ] External SSD
-  - [ ] Archive files
-  - [ ] Media Playback
-  - [ ] Install Apps
-    - [ ] Repos
-    - [ ] Snap
-    - [ ] Flatpak
-    - [ ] AppImage
-  - [ ] OBS Record & Playback
+  - [] SD Card -- no exfat support
+  - [x] External SSD
+  - [x] Archive files
+  - [x] Media Playback
+  - [x] Install Apps
+    - [x] Repos
+    - [x] Snap
+    - [] Flatpak -- really buggy
+    - [x] AppImage
+  - [x] OBS Record & Playback
 - **Networking**
-  - [ ] DLNA/Samba Sharing
-  - [ ] Discovery
-  - [ ] Direct Connect
-  - [ ] Printer
-  - [ ] Bluetooth
+  - [x] DLNA/Samba Sharing
+  - [] Discovery
+  - [x] Direct Connect
+  - [x] Printer
+  - [] Bluetooth -- controller "connected" but didn't work
 - **Benchmarks**
-  - [ ] GTA 5 -- 
-  - [ ] Mad Max -- 
-  - [ ] CPU -- https://browser.geekbench.com/v5/cpu/
-  - [ ] GPU -- https://browser.geekbench.com/v5/compute/
+  - [x] GTA 5 -- 13
+  - [x] Mad Max -- 27
+  - [x] CPU -- https://browser.geekbench.com/v5/cpu/1687253
+  - [x] GPU -- https://browser.geekbench.com/v5/compute/712723
