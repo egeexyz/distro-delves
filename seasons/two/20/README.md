@@ -3,8 +3,8 @@
 - **Install & Resources**
   - [ ] Installer
   - [ ] Welcome App
-  - [ ] Disk Usage -- 9.3gb
-  - [ ] Resource Usage -- 870mb - 109/199
+  - [ ] Disk Usage
+  - [ ] Resource Usage
 - **Desktop & Apps**
   - [ ] Desktop Environment
     - [ ] Style & Theme
@@ -14,16 +14,16 @@
   - [ ] Neofetch
 - **Updates & Drivers**
   - [ ] System Update
-  - [ ] Nvidia Drivers -- 440.64
+  - [ ] Nvidia Drivers
 - **Application Management**
-  - [ ] SD Card -- no exfat support
+  - [ ] SD Card
   - [ ] External SSD
   - [ ] Archive files
   - [ ] Media Playback
   - [ ] Install Apps
     - [ ] Repos
     - [ ] Snap
-    - [ ] Flatpak -- really buggy
+    - [ ] Flatpak
     - [ ] AppImage
   - [ ] OBS Record & Playback
 - **Networking**
@@ -31,9 +31,9 @@
   - [ ] Discovery
   - [ ] Direct Connect
   - [ ] Printer
-  - [ ] Bluetooth -- controller "connected" but didn't work
+  - [ ] Bluetooth
 - **Benchmarks**
-  - [ ] GTA 5 -- 13
-  - [ ] Mad Max -- 27
-  - [ ] CPU -- https://browser.geekbench.com/v5/cpu/1687253
-  - [ ] GPU -- https://browser.geekbench.com/v5/compute/712723
+  - [ ] GTA 5
+  - [ ] Mad Max
+  - [ ] CPU
+  - [ ] GPU
