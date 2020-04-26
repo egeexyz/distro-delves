@@ -1,4 +1,4 @@
-# Q4OS
+# Ubuntu 20.04
 
 - **Install & Resources**
   - [] Installer
