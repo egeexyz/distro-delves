@@ -1,6 +1,6 @@
 ---
 title: 'Episode 2: Ubuntu Focal Fossa 20.04 LTS'
-date: '2020-04-27 17:00:00'
+date: '2020-04-27 15:57:24'
 description: Taking a look at the mighty Ubuntu 20.04 LTS released on April 23rd of
   2020.
 featured_image: "/images/blog/ep20.jpg"
