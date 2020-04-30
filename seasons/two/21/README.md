@@ -1,0 +1,39 @@
+# Fedora 32
+
+- **Install & Resources**
+  - [ ] Installer
+  - [ ] Welcome App
+  - [ ] Disk Usage
+  - [ ] Resource Usage
+- **Desktop & Apps**
+  - [ ] Desktop Environment
+    - [ ] Style & Theme
+    - [ ] Backgrounds
+  - [ ] Default Apps
+  - [ ] Custom Tools
+  - [ ] Neofetch
+- **Updates & Drivers**
+  - [ ] System Update
+  - [ ] Nvidia Drivers
+- **Application Management**
+  - [ ] SD Card
+  - [ ] External SSD
+  - [ ] Archive files
+  - [ ] Media Playback
+  - [ ] Install Apps
+    - [ ] Repos
+    - [ ] Snap
+    - [ ] Flatpak
+    - [ ] AppImage
+  - [ ] OBS Record & Playback
+- **Networking**
+  - [ ] DLNA/Samba Sharing
+  - [ ] Discovery
+  - [ ] Direct Connect
+  - [ ] Printer
+  - [ ] Bluetooth
+- **Benchmarks**
+  - [ ] Geekbench
+  - [ ] Grid
+  - [ ] War Thunder
+  - [ ] GTA
