@@ -11,36 +11,39 @@ The script below covers _out of the box_ desktop use-cases starting from a fresh
 - **Install & Resources**
   - [ ] Installer
   - [ ] Welcome App
-  - [ ] Disk Usage --
-  - [ ] Resource Usage --
-- **Desktop & Apps**
+  - [ ] Disk Usage
+  - [ ] Resource Usage
+- **Desktop & Drivers**
   - [ ] Desktop Environment
     - [ ] Style & Theme
     - [ ] Backgrounds
   - [ ] Default Apps
   - [ ] Custom Tools
+  - [ ] Suspend/Hibernate
   - [ ] Neofetch
-- **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers --
 - **Application Management**
   - [ ] SD Card
+  - [ ] Internal SSD
   - [ ] External SSD
   - [ ] Archive files
   - [ ] Media Playback
+  - [ ] System Update
+  - [ ] Display Drivers
   - [ ] Install Apps
-    - [ ] Repos
     - [ ] Snap
     - [ ] Flatpak
     - [ ] AppImage
   - [ ] OBS Record & Playback
 - **Networking**
-  - [ ] DLNA/Samba Sharing
+  - [ ] DLNA
+  - [ ] Samba
   - [ ] Discovery
   - [ ] Direct Connect
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
-  - [ ] Geekbench --
-  - [ ] Mad Max --
-  - [ ] GTA 5 --
+  - [ ] CPU
+  - [ ] GPU
+  - [ ] Grid
+  - [ ] War Thunder
+  - [ ] GTA 5

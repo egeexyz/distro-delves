@@ -5,35 +5,37 @@
   - [ ] Welcome App
   - [ ] Disk Usage
   - [ ] Resource Usage
-- **Desktop & Apps**
+- **Desktop & Drivers**
   - [ ] Desktop Environment
     - [ ] Style & Theme
     - [ ] Backgrounds
   - [ ] Default Apps
   - [ ] Custom Tools
+  - [ ] Suspend/Hibernate
   - [ ] Neofetch
-- **Updates & Drivers**
-  - [ ] System Update
-  - [ ] Nvidia Drivers
 - **Application Management**
   - [ ] SD Card
+  - [ ] Internal SSD
   - [ ] External SSD
   - [ ] Archive files
   - [ ] Media Playback
+  - [ ] System Update
+  - [ ] Display Drivers
   - [ ] Install Apps
-    - [ ] Repos
     - [ ] Snap
     - [ ] Flatpak
     - [ ] AppImage
   - [ ] OBS Record & Playback
 - **Networking**
-  - [ ] DLNA/Samba Sharing
+  - [ ] DLNA
+  - [ ] Samba
   - [ ] Discovery
   - [ ] Direct Connect
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
-  - [ ] Geekbench
+  - [ ] CPU
+  - [ ] GPU
   - [ ] Grid
   - [ ] War Thunder
-  - [ ] GTA
+  - [ ] GTA 5
