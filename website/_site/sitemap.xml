@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>/about</loc>
+<lastmod>2020-04-27T15:58:21-07:00</lastmod>
+</url>
+<url>
+<loc>/blog/episode-2-ubuntu-focal-fossa-2004-lts</loc>
+<lastmod>2020-04-27T15:57:24-07:00</lastmod>
+</url>
+<url>
+<loc>/project/season-two</loc>
+<lastmod>2020-01-01T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>/blog/</loc>
+</url>
+<url>
+<loc>/</loc>
+</url>
+</urlset>
