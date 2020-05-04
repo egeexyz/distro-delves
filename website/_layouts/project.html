@@ -17,15 +17,29 @@ layout: default
 
 </section>
 
-<section class="single">
+<section class="listing">
 
 	<div class="wrap">
 
-		<article class="single-post">
+		{% for post in site.posts reversed %}
 
-			{{ page.content }}
+		<article class="post">
+
+			<div class="post__image-wrap">
+				<div class="post__image" style="background-image: url({{ post.featured_image | relative_url }})"></div>
+			</div>
+
+			<div class="post__content-wrap">
+				<div class="post__content">
+					<h2 class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+					<p class="post__subtitle">{{ post.subtitle }}</p>
+					<p class="post__description">{{ post.description }}</p>
+				</div>
+			</div>
 
 		</article>
+
+		{% endfor %}
 
 	</div>
 
