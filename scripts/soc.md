@@ -1,3 +1,3 @@
-# A special Distro Delves Script for System-on-Chip setups 📜
+# A Distro Delves Script for Super Low-Spec & System-on-Chip setups 📜
 
 ## TODO :(
