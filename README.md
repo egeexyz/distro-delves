@@ -2,8 +2,8 @@
 
 [![Youtube](https://img.shields.io/badge/Egee-Youtube-e62117.svg)](https://www.youtube.com/c/Egeeirl)
 
-Distro Delves is a video series on YouTube ~~reviewing~~ analyzing Linux distributions & operating systems in an informational yet entertaining format.
+Welcome to the Distro Delves Github Repository! 👋
 
-Each episode focus on a particular Linux distro or operating system uses a particular checklist from the `./checklists/` folder based on the current season.
+Distro Delves is a YouTube web-series ~~reviewing~~ looking at  Linux distributions & operating systems in an informational yet entertaining format.
 
-If you spot a problem with an episode or checklist, please open an [issue](https://github.com/egee-irl/distro-delves/issues) or fork & submit a pull request.
+If you have an idea for a distro or OS for the show, open an [issue](https://github.com/egee-irl/distro-delves/issues)!
