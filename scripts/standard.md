@@ -11,7 +11,7 @@
     - [ ] Backgrounds!
   - [ ] Default Apps
   - [ ] Custom Tools?
-  - [ ] Neofetch
+  - [ ] Neofetch 
 - **Application Management**
   - [ ] SD Card
   - [ ] Encrypted Internal HDD
@@ -35,3 +35,6 @@
   - [ ] GTA 5
   - [ ] CPU
   - [ ] GPU
+ - **Outro**
+   - [ ] on a scale of 1 to 10 how hard is it to fix issues that showed up during the review 
+         1 is it fixed itself, 10 unfixable
