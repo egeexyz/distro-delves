@@ -5,6 +5,7 @@
   - [ ] Welcome App?
   - [ ] Disk Usage
   - [ ] Resource Usage
+  - [ ] How the user exeperince is when stressing the CPU using stress_cpu_x64(for x86_64 systems)
 - **Desktop & Drivers**
   - [ ] Desktop Environment
     - [ ] Style & Theme
@@ -35,3 +36,5 @@
   - [ ] GTA 5
   - [ ] CPU
   - [ ] GPU
+- **outro**
+  - [] Rate fixing issues found in the review on a scale of 1 to 10. 1 the issue resolved itself. 10 unfixabel
