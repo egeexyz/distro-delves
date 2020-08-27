@@ -36,5 +36,3 @@
   - [ ] GTA 5
   - [ ] CPU
   - [ ] GPU
-- **outro**
-  - [] Rate fixing issues found in the review on a scale of 1 to 10. 1 the issue resolved itself. 10 unfixable
