@@ -4,14 +4,15 @@
   - [ ] Installer
   - [ ] Welcome App?
   - [ ] Disk Usage
-  - [ ] Resource Usage
+  - [ ] Memory Usage after login
+  - [ ] Neofetch
 - **Desktop & Drivers**
   - [ ] Desktop Environment
     - [ ] Style & Theme
     - [ ] Backgrounds!
   - [ ] Default Apps
+    - [ ] Memory Usage Before & After
   - [ ] Custom Tools?
-  - [ ] Neofetch
 - **Application Management**
   - [ ] SD Card
   - [ ] Encrypted Internal HDD
@@ -29,9 +30,7 @@
   - [ ] Printer
   - [ ] Bluetooth
 - **Benchmarks**
-  - [ ] Xonotic (Mesa only)
-  - [ ] Dirt
-  - [ ] War Thunder
-  - [ ] GTA 5
-  - [ ] CPU
-  - [ ] GPU
+  - [ ] Lightworks
+  - [ ] Blender
+  - [ ] Geekbench
+  - [ ] Other
