@@ -13,6 +13,7 @@
   - [ ] Default Apps
     - [ ] Memory Usage Before & After
   - [ ] Custom Tools?
+    - [ ] How the user exeperince is when stressing the CPU using stress_cpu_x64(for x86_64 systems)
 - **Application Management**
   - [ ] SD Card
   - [ ] Encrypted Internal HDD
