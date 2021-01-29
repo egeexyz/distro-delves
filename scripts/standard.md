@@ -35,3 +35,7 @@
   - [ ] Blender
   - [ ] Geekbench
   - [ ] Other
+- **EgeeDestroyer/Egee-to-use toolkit**
+  - [ ] How well did the distro handle it?
+      - [ ] how fast did it die?
+      - [ ] did it automagically recover?
