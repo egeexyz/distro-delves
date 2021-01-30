@@ -35,7 +35,8 @@
   - [ ] Blender
   - [ ] Geekbench
   - [ ] Other
-- **EgeeDestroyer/Egee-to-use toolkit**
+  - [ ] Egee-to-use Toolkit Stress Testers
+- **EgeeDestroyer/Egee-to-use Toolkit's other functionality**
   - [ ] How well did the distro handle it?
       - [ ] how fast did it die?
       - [ ] did it automagically recover?
