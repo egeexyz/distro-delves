@@ -35,10 +35,7 @@ fi
 if [ ! -f /usr/bin/dialog ]; then
     echo "Dialog is not installed, but it's required by this toolkit. Please install the package 'dialog' to continue."
 
-    bash "$FULLPATH/../runme.sh" pkginstall dialog
-    if [ ! $? -eq 0 ]; then
-        exit 1
-    fi
+    exit 1
 fi
 
 clear
