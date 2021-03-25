@@ -32,7 +32,7 @@ if [ "$family" = "arch" ]; then
 	echo "INFO: installing MangoHud"
 	curl -L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o $WORKDIR/MangoHud.tar.gz
 	tar -xf $WORKDIR/MangoHud.tar.gz
-	bash $WORKDIR/MangoHud/mangohud-setup.sh
+	bash $WORKDIR/MangoHud/mangohud-setup.sh install
 
 	echo "Install zen kernel? [y/N]"
 	read -r zen
