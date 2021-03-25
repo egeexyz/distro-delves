@@ -43,4 +43,4 @@ echo "INFO: Finalizing bootstrapping process. Forking apps..."
 
 steam &
 lutris &
-wine &
+winecfg &
