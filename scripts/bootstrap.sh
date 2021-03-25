@@ -19,7 +19,7 @@ if [ "$family" = "arch" ]; then
 	
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu
-	sudo pacman -S lib32-mesa lib32-vulkan-icd-loader git curl base-devel vulkan-icd-loader steam lutris wine
+	sudo pacman -S lib32-mesa lib32-vulkan-icd-loader git curl base-devel vulkan-icd-loader flatpak steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git
