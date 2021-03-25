@@ -6,6 +6,11 @@ if [ -z "$family" ]; then
 	exit
 fi
 
+WORKDIR="/tmp/distrodelves-bootstrap"
+
+mkdir -p $WORKDIR
+cd $WORKDIR || exit
+
 # Arch-based
 if [ "$family" = "arch" ]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
@@ -14,17 +19,28 @@ if [ "$family" = "arch" ]; then
 	
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu
-	sudo pacman -S base-devel git lib32-mesa lib32-vulkan-icd-loader vulkan-icd-loader steam lutris wine
+	sudo pacman -S lib32-mesa lib32-vulkan-icd-loader git curl base-devel vulkan-icd-loader steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git
 		cd yay-bin || exit
 		makepkg -si
+		cd $WORKDIR || exit
 	fi
-	echo "INFO: installing AUR packages"
-	yay -S mangohud # TODO: figure out which version of mangohud is the best for each system
+	#echo "INFO: installing AUR packages"
+	
+	echo "INFO: installing MangoHud"
+	curl -L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o $WORKDIR/MangoHud.tar.gz
+	tar -xf $WORKDIR/MangoHud.tar.gz
+	bash $WORKDIR/MangoHud/mangohud-setup.sh
 
 	echo "Install zen kernel? [y/N]"
 	read -r zen
 	if [ "$zen" == "y" ]; then sudo pacman -S linux-zen; fi
 fi
+
+echo "INFO: Finalizing bootstrapping process. Forking apps..."
+
+steam &
+lutris &
+wine &
