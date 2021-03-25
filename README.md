@@ -23,7 +23,6 @@ If there's a Distro or Operating System you'd like to see on the show, open an [
   - [ ] Default Apps
     - [ ] Memory Usage Before & After
   - [ ] Custom Tools?
-    - [ ] How the user experience is when stressing the CPU using stress_cpu_x64(for x86_64 systems)
 - **Application Management**
   - [ ] SD Card
   - [ ] Encrypted Internal HDD
@@ -44,9 +43,3 @@ If there's a Distro or Operating System you'd like to see on the show, open an [
   - [ ] Lightworks
   - [ ] Blender
   - [ ] Geekbench
-  - [ ] Other
-  - [ ] Egee-to-use Toolkit Stress Testers
-- **EgeeDestroyer/Egee-to-use Toolkit's other functionality**
-  - [ ] How well did the distro handle it?
-      - [ ] how fast did it die?
-      - [ ] did it automagically recover?
