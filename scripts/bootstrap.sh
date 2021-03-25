@@ -18,19 +18,25 @@ if [ -f /usr/bin/pacman ]; then
 		fi
 # ubuntu/debian
 elif [ -f /usr/bin/apt ]; then
+		dpkg --add-architecture i386
+		apt update && apt upgrade
+		apt install -y  mesa-vulkan-drivers steam libvulkan1 vulkan-utils mesa mesa:i386 wine
 		on_ubuntu=$(lsb_release -i)
 		if [ "$on_ubuntu" == "Distributor ID: Ubuntu" ]; then
-				apt update && apt upgrade
 				apt install lutris -y
 		else 
 				echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
 				wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
 				sudo apt update
 				sudo apt upgrade
+				sudo apt install lurtis
 		fi
 # fedora/Mageia 8
 elif [ -f /usr/bin/dnf ]; then
-		dnf upgrade && dnf install lutris -y
+		dnf upgrade && dnf install lutris wine vulkan-loader.i686 vulkan-loader.x86_64 mesa.i686 mesa -y
+#opensuse 
+elif [ -f /usr/bin/zypper ]; then
+		sudo zypper in lutris vulkan-loader wine -y 
 else
 		echo "Unsuported linux distribution, considering porting this script to your distro and opening a pr"
 fi
