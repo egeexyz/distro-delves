@@ -20,6 +20,7 @@ install_mangohud() {
 
 install_flatpaks () {
 	echo "INFO: installing Flatpaks, this will take a while..."
+	 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 	flatpak install flathub com.leinardi.gst -y
 	flatpak install flathub com.basemark.BasemarkGPU -y
 	flatpak install flathub io.github.arunsivaramanneo.GPUViewer -y
