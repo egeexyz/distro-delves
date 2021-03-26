@@ -1,30 +1,67 @@
 #!/usr/bin/env bash
 
+family="$1"
+if [ -z "$family" ]; then
+	echo "Error: family required. Exiting..."
+	exit
+fi
+
+WORKDIR="/tmp/distrodelves-bootstrap"
+
+mkdir -p $WORKDIR
+cd $WORKDIR || exit
+
+install_mangohud() {
+	echo "INFO: installing MangoHud"
+	curl -L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o $WORKDIR/MangoHud.tar.gz
+	tar -xf $WORKDIR/MangoHud.tar.gz
+	bash $WORKDIR/MangoHud/mangohud-setup.sh install
+}
+
+install_flatpaks () {
+	echo "INFO: installing Flatpaks, this will take a while..."
+	flatpak install flathub com.leinardi.gst -y
+	flatpak install flathub com.basemark.BasemarkGPU -y
+	flatpak install flathub io.github.arunsivaramanneo.GPUViewer -y
+
+	flatpak install flathub org.xonotic.Xonotic -y
+	flatpak install flathub org.zdoom.GZDoom -y
+	flatpak install flathub io.github.freedoom.Phase1 -y
+	flatpak install flathub com.moddb.TotalChaos -y
+}
+
 # Arch-based
-if [ -f /usr/bin/pacman ]; then
-		# enable multilib
-		sudo sed -i 's/#[multilib]/[multilib]/g' /etc/pacman.conf
-		sudo sed -i 's/#Include = \/etc\/pacman.d\/mirrorlist\//Include = \/etc\/pacman.d\/mirrorlist\//g' /etc/pacman.conf
-		sudo pacman -Syyu # force resync for multilib
-		sudo pacman -S base-devel git lib32-mesa lib32-vulkan-icd-loader vulkan-icd-loader steam lutris wine
+if [ "$family" = "arch" ]; then
+	echo "INFO: enabling multilib & forcing resync for multilib"
+	sudo sed -i 's/#[multilib]/[multilib]/g' /etc/pacman.conf
+	sudo sed -i 's/#Include = \/etc\/pacman.d\/mirrorlist\//Include = \/etc\/pacman.d\/mirrorlist\//g' /etc/pacman.conf
+	
+	echo "INFO: updating system & installing packages"
+	sudo pacman -Syyu
+	sudo pacman -S lib32-mesa lib32-vulkan-icd-loader git lutris flatpak curl base-devel vulkan-icd-loader steam lutris wine
+	if [ -z "$(which yay)" ]; then
+		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git
 		cd yay-bin || exit
 		makepkg -si
-		yay -S mangohud 
-		echo "Install zen kernel? [Y/N]"
-		read -r zen
-		if [ "$zen" == "Y" ]; then
-				sudo pacman -S linux-zen
-		fi
+		cd $WORKDIR || exit
+	fi
+	#echo "INFO: installing AUR packages"
+	echo "Install zen kernel? [y/N]"
+	read -r zen
+	if [ "$zen" == "y" ]; then sudo pacman -S linux-zen; fi
 # ubuntu/debian
 elif [ -f /usr/bin/apt ]; then
+		echo "INFO: enabling multilib "
 		dpkg --add-architecture i386
+		echo "INFO: updating system & installing packages"
 		apt update && apt upgrade
-		apt install -y  mesa-vulkan-drivers steam libvulkan1 vulkan-utils mesa mesa:i386 wine
+		apt install -y  mesa-vulkan-drivers flatpak libvulkan1 vulkan-utils mesa mesa:i386 wine
 		on_ubuntu=$(lsb_release -i)
 		if [ "$on_ubuntu" == "Distributor ID: Ubuntu" ]; then
 				apt install lutris -y
 		else 
+				echo "INFO: on debian getting lutris from OBS"
 				echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
 				wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
 				sudo apt update
@@ -33,12 +70,22 @@ elif [ -f /usr/bin/apt ]; then
 		fi
 # fedora/Mageia 8
 elif [ -f /usr/bin/dnf ]; then
-		dnf upgrade && dnf install lutris wine vulkan-loader.i686 vulkan-loader.x86_64 mesa.i686 mesa -y
+		echo "INFO: adding rpm fusion repos"
+		sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+		echo "INFO: updating system & installing packages"
+		dnf upgrade && dnf install flatpak vulkan-loader.i686 vulkan-loader.x86_64 mesa.i686 mesa steam	 -y
 #opensuse 
 elif [ -f /usr/bin/zypper ]; then
-		sudo zypper in lutris vulkan-loader wine -y 
+		echo "INFO: updating system & installing packages"
+		sudo zypper install flatpak vulkan-loader wine steam -y 
 else
-		echo "Unsuported linux distribution, considering porting this script to your distro and opening a pr"
+		echo "ERROR: Unsuported linux distribution"
 fi
 
-# TODO opensuse support
+install_mangohud
+install_flatpaks
+echo "INFO: Finalizing bootstrapping process. Forking apps..."
+
+steam &
+lutris &
+winecfg &
