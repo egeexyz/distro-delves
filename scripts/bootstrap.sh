@@ -14,7 +14,7 @@ if [[ -n "$(which pacman)" ]]; then
 	
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu --noconfirm
-	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
+	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader php git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git
@@ -63,6 +63,7 @@ fi
 
 install_mangohud
 install_flatpaks
+install_phoronix
 echo "INFO: Finalizing bootstrapping process. Forking apps..."
 
 steam &

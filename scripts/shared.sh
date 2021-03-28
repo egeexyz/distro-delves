@@ -27,3 +27,9 @@ install_flatpaks() {
 	# flatpak install flathub io.github.freedoom.Phase1 -y
 	# flatpak install flathub com.moddb.TotalChaos -y
 }
+
+install_phoronix() {
+    brew install phoronix-test-suite
+    yes y | phoronix-test-suite
+    cp "./files/user-config.xml" "$HOME/.phoronix-test-suite/user-config.xml"
+}

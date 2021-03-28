@@ -24,12 +24,6 @@ gpu_games_steam=("pts/csgo-1.6.0" "pts/tf2-1.2.3" "pts/dota2-1.2.6" "pts/portal-
 
 all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@]}" "${encryption[@]}" "${gpu_perf[@]}" "${gpu_games_oss[@]}" "${gpu_games_steam[@]}" )
 
-install_phoronix() {
-    brew install phoronix-test-suite
-    yes | phoronix-test-suite
-    cp "./files/user-config.xml" ~/.phoronix-test-suite/user-config.xml
-}
-
 install_tests() {
     for test in "${all_of_em[@]}"; do
         sudo "phoronix-test-suite batch-install ${test}"
