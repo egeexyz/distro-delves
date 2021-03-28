@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -eu
 
 disk=("pts/unpack-linux-1.1.1" "pts/hdparm-read-1.0.0")
 
@@ -12,7 +13,7 @@ encoding=("pts/x264-2.6.1" "pts/encode-mp3-1.7.4" "pts/encode-opus-1.1.1" "pts/v
 
 compression=("pts/compress-7zip-1.7.1" "pts/compress-gzip-1.2.0" "pts/compress-pbzip2-1.5.0" "pts/compress-xz-1.1.0")
 
-coding=("pts/pybench-1.1.3" "pts/phpbench-1.1.6" "pts/rbenchmark-1.0.3" "pts/node-octane-1.0.1")
+devel=("pts/pybench-1.1.3" "pts/phpbench-1.1.6" "pts/rbenchmark-1.0.3" "pts/node-octane-1.0.1")
 
 encryption=("pts/blake2-1.2.1" "pts/gcrypt-1.1.2" "pts/gnupg-2.5.0")
 
@@ -22,7 +23,7 @@ gpu_games_oss=("pts/xonotic-1.5.1" "pts/tesseract-1.1.0" "pts/supertuxkart-1.6.0
 
 gpu_games_steam=("pts/csgo-1.6.0" "pts/tf2-1.2.3" "pts/dota2-1.2.6" "pts/portal-1.1.2")
 
-all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@]}" "${encryption[@]}" "${gpu_perf[@]}" "${gpu_games_oss[@]}" "${gpu_games_steam[@]}" )
+all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@]}" "${compression[@]}" "${devel[@]}" "${encryption[@]}" "${gpu_perf[@]}" "${gpu_games_oss[@]}" "${gpu_games_steam[@]}" )
 
 install_tests() {
     for test in "${all_of_em[@]}"; do
@@ -35,7 +36,3 @@ run_tests() {
         sudo "phoronix-test-suite batch-run ${test}"
     done
 }
-
-
-
-install_tests
