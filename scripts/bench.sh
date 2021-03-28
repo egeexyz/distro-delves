@@ -3,7 +3,7 @@ set -eu
 
 disk=("pts/unpack-linux-1.1.1" "pts/hdparm-read-1.0.0")
 
-os=("pts/sockperf-1.0.1" "pts/perf-bench-1.0.3")
+os=("pts/sockperf-1.0.1" ) #"pts/perf-bench-1.0.3"
 
 ram=("pts/t-test1-1.0.1" "pts/stream-dynamic-1.0.0")
 
