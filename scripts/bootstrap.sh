@@ -3,10 +3,6 @@ set -eu
 
 source "./shared.sh"
 install_brew
-WORKDIR="/tmp/distrodelves-bootstrap"
-
-mkdir -p $WORKDIR
-cd $WORKDIR || exit
 
 # Arch-based
 if [[ -n "$(which pacman)" ]]; then
@@ -19,10 +15,9 @@ if [[ -n "$(which pacman)" ]]; then
 	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader php git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
-		git clone https://aur.archlinux.org/yay-bin.git
-		cd yay-bin || exit
+		git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin || true
+		cd /tmp/yay-bin || exit
 		makepkg -si
-		cd $WORKDIR || exit
 	fi
 	#echo "INFO: installing AUR packages"
 	echo "Install zen kernel? [y/N]"
@@ -59,8 +54,8 @@ elif [ -f /usr/bin/zypper ]; then
 		echo "INFO: updating system & installing packages"
 		sudo zypper install flatpak vulkan-loader wine curl steam -y 
 else
-		echo "ERROR: Unsuported linux distribution"
-		exit
+	echo "ERROR: Unsuported linux distribution"
+	exit
 fi
 
 install_mangohud
