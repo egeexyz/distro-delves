@@ -27,12 +27,12 @@ all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@
 
 install_tests() {
     for test in "${all_of_em[@]}"; do
-        sudo "phoronix-test-suite batch-install ${test}"
+        phoronix-test-suite batch-install "${test}"
     done
 }
 
 run_tests() {
     for test in "${all_of_em[@]}"; do
-        sudo "phoronix-test-suite batch-run ${test}"
+        phoronix-test-suite batch-run "${test}"
     done
 }
