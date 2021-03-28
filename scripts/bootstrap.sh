@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# I think the famil stuff can be dropped it would be simpler to check if the package manager is present 
-family="$1"
-if [ -z "$family" ]; then
-	echo "Error: family required. Exiting..."
-	exit
+if [[ ! -d "/home/linuxbrew" ]]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
+	source ~/.profile
 fi
 
 WORKDIR="/tmp/distrodelves-bootstrap"
 
 mkdir -p $WORKDIR
 cd $WORKDIR || exit
+
 
 install_mangohud() {
 	echo "INFO: installing MangoHud"
@@ -18,7 +18,7 @@ install_mangohud() {
 	bash $WORKDIR/MangoHud/mangohud-setup.sh install
 }
 
-install_flatpaks () {
+install_flatpaks() {
     if [ -z "$(which flatpak)" ]; then
     echo "INFO: installing Flatpaks, this will take a while..."
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -37,14 +37,14 @@ else
 }
 
 # Arch-based
-if [ "$family" = "arch" ]; then
+if [[ -n "$(which pacman)" ]]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
 	sudo sed -i 's/#[multilib]/[multilib]/g' /etc/pacman.conf
 	sudo sed -i 's/#Include = \/etc\/pacman.d\/mirrorlist\//Include = \/etc\/pacman.d\/mirrorlist\//g' /etc/pacman.conf
 	
 	echo "INFO: updating system & installing packages"
-	sudo pacman -Syyu
-	sudo pacman -S lib32-mesa lib32-vulkan-icd-loader git flatpak curl base-devel vulkan-icd-loader steam lutris wine
+	sudo pacman -Syyu --noconfirm
+	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader git flatpak curl base-devel vulkan-icd-loader steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git
@@ -55,7 +55,7 @@ if [ "$family" = "arch" ]; then
 	#echo "INFO: installing AUR packages"
 	echo "Install zen kernel? [y/N]"
 	read -r zen
-	if [ "$zen" == "y" ]; then sudo pacman -S linux-zen; fi
+	if [ "$zen" == "y" ]; then sudo pacman -S --noconfirm linux-zen; fi
 # ubuntu/debian
 elif [ -f /usr/bin/apt ]; then
 		echo "INFO: enabling multilib "
@@ -88,6 +88,7 @@ elif [ -f /usr/bin/zypper ]; then
 		sudo zypper install flatpak vulkan-loader wine curl steam -y 
 else
 		echo "ERROR: Unsuported linux distribution"
+		exit
 fi
 
 install_mangohud
