@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -eu
 
 install_brew() {
 if [[ ! -d "/home/linuxbrew" ]]; then
@@ -10,9 +11,9 @@ fi
 
 install_mangohud() {
 	echo "INFO: installing MangoHud"
-	curl "-L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o $WORKDIR/MangoHud.tar.gz"
-	tar "-xf $WORKDIR/MangoHud.tar.gz"
-	bash "$WORKDIR/MangoHud/mangohud-setup.sh install"
+	curl -L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o "$WORKDIR/MangoHud.tar.gz"
+	tar -xf "$WORKDIR/MangoHud.tar.gz"
+	bash "$WORKDIR/MangoHud/mangohud-setup.sh" install
 }
 
 install_flatpaks() {
@@ -31,5 +32,5 @@ install_flatpaks() {
 install_phoronix() {
     brew install phoronix-test-suite
     yes y | phoronix-test-suite
-    cp "./files/user-config.xml" "$HOME/.phoronix-test-suite/user-config.xml"
+	curl -L https://gist.github.com/egee-irl/5265d9a5e44e9d14dee175be5a39ce63 -o "$HOME/.phoronix-test-suite/user-config.xml"
 }
