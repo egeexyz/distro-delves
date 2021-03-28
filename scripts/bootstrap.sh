@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -eu
+
 source "./shared.sh"
 install_brew
 WORKDIR="/tmp/distrodelves-bootstrap"
