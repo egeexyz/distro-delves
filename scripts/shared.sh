@@ -3,8 +3,8 @@
 install_brew() {
 if [[ ! -d "/home/linuxbrew" ]]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$USER/.profile"
-	source "$USER/.profile"
+	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.bashrc"
+	source "$HOME/.bashrc"
 fi
 }
 
