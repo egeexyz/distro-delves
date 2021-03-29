@@ -4,11 +4,9 @@
 
 Welcome to the Distro Delves Github Repository! 👋
 
-If you want to see what episodes are being researched and produced, visit the [episode backlog](https://github.com/egee-irl/distro-delves/projects/1)!
+If you are wondering what Distro Delves is, you can read about it [here] (https://egee.xyz/distrodelves/) or watch it [here](https://www.youtube.com/playlist?list=PLTGHiAlif1EhJg9ALaTYWgxubCVAJJGlm)!
 
-If there's a Distro or Operating System you'd like to see on the show, open an [issue](https://github.com/egee-irl/distro-delves/issues) to start the conversation!
-
-# The Standard Distro Delves Script 📜
+# The Standard Script 📜
 
 - **Install & Resources**
   - [ ] Installer
