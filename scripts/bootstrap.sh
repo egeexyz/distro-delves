@@ -3,6 +3,7 @@ set -eu
 
 source "./shared.sh"
 install_brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Arch-based
 if [ -n "$(which pacman)" ]; then
@@ -37,7 +38,7 @@ elif [ -n "$(which apt-get)" ]; then
 		#fi
 		echo "INFO: updating system & installing packages"
 		sudo apt-get upgrade -y
-		sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris
+		sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris php-cli php-xml php-bz2
 # fedora/Mageia 8
 elif [ -n "$(which dnf)" ]; then
 		echo "INFO: adding rpm fusion repos"
