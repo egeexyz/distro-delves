@@ -28,4 +28,3 @@ install_tests() {
 run_tests() {
     phoronix-test-suite batch-benchmark eg-basic
 }
-}

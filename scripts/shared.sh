@@ -29,7 +29,7 @@ install_flatpaks() {
 }
 
 install_phoronix() {
-	source "$HOME/.bashrc"
+	brew install gcc
     brew install phoronix-test-suite
     yes y | phoronix-test-suite
 	curl -L https://gist.githubusercontent.com/egee-irl/5265d9a5e44e9d14dee175be5a39ce63/raw/7b4435c5a91492614d7438bf3abcdf93eb0bec85/user-config.xml -o "$HOME/.phoronix-test-suite/user-config.xml"
