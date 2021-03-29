@@ -27,13 +27,14 @@ if [ -n "$(which pacman)" ]; then
 elif [ -n "$(which apt-get)" ]; then
 		echo "INFO: enabling multilib "
 		sudo dpkg --add-architecture i386
-		if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
+		# $() doesn't work here for some reason
+		#if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
 			echo "INFO: on debian getting lutris from OBS"
 			echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
 			wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
 			sudo add-apt-repository ppa:kisak/kisak-mesa -y
 			sudo apt-get update
-		fi
+		#fi
 		echo "INFO: updating system & installing packages"
 		sudo apt-get upgrade -y
 		sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris
