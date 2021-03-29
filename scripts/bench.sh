@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-disk=("pts/unpack-linux-1.1.1" "pts/hdparm-read-1.0.0")
-
-os=("pts/sockperf-1.0.1" ) #"pts/perf-bench-1.0.3"
-
-ram=("pts/t-test1-1.0.1" "pts/stream-dynamic-1.0.0")
+basic=("pts/fs-mark-1.0.2" "pts/sockperf-1.0.1" "pts/mbw-1.0.0" )
 
 compiling=("pts/build-imagemagick-1.7.2" "pts/build-apache-1.6.1" "pts/build-ffmpeg-1.0.2" "pts/build-mplayer-1.4.0")
 
@@ -26,13 +22,10 @@ gpu_games_steam=("pts/csgo-1.6.0" "pts/tf2-1.2.3" "pts/dota2-1.2.6" "pts/portal-
 all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@]}" "${compression[@]}" "${devel[@]}" "${encryption[@]}" "${gpu_perf[@]}" "${gpu_games_oss[@]}" "${gpu_games_steam[@]}" )
 
 install_tests() {
-    for test in "${all_of_em[@]}"; do
-        phoronix-test-suite batch-install "${test}"
-    done
+    phoronix-test-suite batch-install eg-basic
 }
 
 run_tests() {
-    for test in "${all_of_em[@]}"; do
-        phoronix-test-suite batch-run "${test}"
-    done
+    phoronix-test-suite batch-benchmark eg-basic
+}
 }
