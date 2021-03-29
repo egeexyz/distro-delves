@@ -16,12 +16,12 @@ install_mangohud() {
 }
 
 install_flatpaks() {
-    echo "INFO: installing Flatpaks, this will take a while..."
-    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+	echo "INFO: installing Flatpaks, this will take a while..."
+	flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 	flatpak install --user flathub com.leinardi.gst -y
 	flatpak install --user flathub io.github.arunsivaramanneo.GPUViewer -y
 
-    # flatpak install flathub com.basemark.BasemarkGPU -y
+	# flatpak install flathub com.basemark.BasemarkGPU -y
 	# flatpak install flathub org.xonotic.Xonotic -y
 	# flatpak install flathub org.zdoom.GZDoom -y
 	# flatpak install flathub io.github.freedoom.Phase1 -y
@@ -32,8 +32,8 @@ install_phoronix() {
 	brew install gcc
 	brew install php
 	brew install make
-    brew install phoronix-test-suite
-    yes y | phoronix-test-suite
+	brew install phoronix-test-suite
+	yes y | phoronix-test-suite
 
 	mkdir -p "$HOME/.phoronix-test-suite/text-suites/local/eg-basic"
 

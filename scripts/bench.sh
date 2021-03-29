@@ -22,9 +22,9 @@ gpu_games_steam=("pts/csgo-1.6.0" "pts/tf2-1.2.3" "pts/dota2-1.2.6" "pts/portal-
 all_of_em=( "${disk[@]}" "${os[@]}"  "${ram[@]}" "${compiling[@]}" "${encoding[@]}" "${compression[@]}" "${devel[@]}" "${encryption[@]}" "${gpu_perf[@]}" "${gpu_games_oss[@]}" "${gpu_games_steam[@]}" )
 
 install_tests() {
-    phoronix-test-suite batch-install eg-basic
+	phoronix-test-suite batch-install eg-basic
 }
 
 run_tests() {
-    phoronix-test-suite batch-benchmark eg-basic
+	phoronix-test-suite batch-benchmark eg-basic
 }

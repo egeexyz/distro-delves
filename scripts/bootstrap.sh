@@ -10,7 +10,7 @@ if [ -n "$(which pacman)" ]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
 	sudo sed -i 's/#[multilib]/[multilib]/g' /etc/pacman.conf
 	sudo sed -i 's/#Include = \/etc\/pacman.d\/mirrorlist\//Include = \/etc\/pacman.d\/mirrorlist\//g' /etc/pacman.conf
-	
+
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu --noconfirm
 	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader php git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
@@ -46,7 +46,7 @@ elif [ -n "$(which dnf)" ]; then
 		echo "INFO: updating system & installing packages"
 		sudo dnf upgrade
 		sudo dnf install flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 mesa.i686 mesa steam	 -y
-#opensuse 
+#opensuse
 elif [ -n "$(which zypper)" ]; then
 		echo "INFO: updating system & installing packages"
 		sudo zypper install -y flatpak wine lutris steam
