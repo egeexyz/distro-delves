@@ -49,7 +49,7 @@ elif [ -n "$(which dnf)" ]; then
 #opensuse 
 elif [ -n "$(which zypper)" ]; then
 		echo "INFO: updating system & installing packages"
-		sudo zypper install flatpak vulkan-loader wine curl steam -y 
+		sudo zypper install -y flatpak wine lutris steam
 else
 	echo "ERROR: Unsuported linux distribution"
 	exit
