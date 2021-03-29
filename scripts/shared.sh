@@ -29,7 +29,7 @@ install_flatpaks() {
 }
 
 install_phoronix() {
-	brew install gcc
+	#brew install gcc
 	brew install php
 	brew install make
 	brew install phoronix-test-suite
