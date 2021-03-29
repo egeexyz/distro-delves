@@ -26,30 +26,31 @@ if [ -n "$(which pacman)" ]; then
 	if [ "$zen" == "y" ]; then sudo pacman -S --noconfirm linux-zen; fi
 # ubuntu/debian
 elif [ -n "$(which apt-get)" ]; then
-		echo "INFO: enabling multilib "
-		sudo dpkg --add-architecture i386
-		# $() doesn't work here for some reason
-		#if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
-			echo "INFO: on debian getting lutris from OBS"
-			echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
-			wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
-			sudo add-apt-repository ppa:kisak/kisak-mesa -y
-			sudo apt-get update
-		#fi
-		echo "INFO: updating system & installing packages"
-		sudo apt-get upgrade -y
-		sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf
+	echo "INFO: enabling multilib "
+	sudo dpkg --add-architecture i386
+	# $() doesn't work here for some reason
+	#if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
+		echo "INFO: on debian getting lutris from OBS"
+		echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
+		wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
+		sudo add-apt-repository ppa:kisak/kisak-mesa -y
+		sudo apt-get update
+	#fi
+	echo "INFO: updating system & installing packages"
+	sudo apt-get upgrade -y
+	sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf
 # fedora/Mageia 8
 elif [ -n "$(which dnf)" ]; then
-		echo "INFO: adding rpm fusion repos"
-		sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-		echo "INFO: updating system & installing packages"
-		sudo dnf upgrade -y
-		sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 mesa.i686 mesa steam
+	echo "INFO: adding rpm fusion repos"
+	sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+	echo "INFO: updating system & installing packages"
+	sudo dnf upgrade -y
+	sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 mesa.i686 mesa steam
+	sudo dnf groupinstall -y "Development Tools" "Development Libraries"
 #opensuse
 elif [ -n "$(which zypper)" ]; then
-		echo "INFO: updating system & installing packages"
-		sudo zypper install -y flatpak wine lutris steam
+	echo "INFO: updating system & installing packages"
+	sudo zypper install -y flatpak wine lutris steam
 else
 	echo "ERROR: Unsuported linux distribution"
 	exit
