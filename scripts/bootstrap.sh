@@ -13,7 +13,7 @@ if [ -n "$(which pacman)" ]; then
 
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu --noconfirm
-	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader php git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
+	sudo pacman -S --noconfirm lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 php git flatpak curl base-devel vulkan-icd-loader flatpak steam lutris wine
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin || true
