@@ -5,9 +5,9 @@ source "./shared.sh"
 install_brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasam sasam)
+common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm sasm)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh "${common[@]}")
-ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
+ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
 
 # Arch-based
 if [ -n "$(which pacman)" ]; then
@@ -28,6 +28,7 @@ if [ -n "$(which pacman)" ]; then
 	echo "Install zen kernel? [y/N]"
 	read -r zen
 	if [ "$zen" == "y" ]; then sudo pacman -S --noconfirm linux-zen; fi
+	sudo systemctl enable --now sshd
 # ubuntu/debian
 elif [ -n "$(which apt-get)" ]; then
 	echo "INFO: enabling multilib "
@@ -43,6 +44,7 @@ elif [ -n "$(which apt-get)" ]; then
 	echo "INFO: updating system & installing packages"
 	sudo apt-get upgrade -y
 	sudo apt-get install -y "${ubuntu[@]}"
+	sudo systemctl enable --now ssh
 # fedora/Mageia 8
 elif [ -n "$(which dnf)" ]; then
 	echo "INFO: adding rpm fusion repos"
@@ -60,12 +62,11 @@ else
 	exit
 fi
 
-systemctl enable --now sshd
-systemctl restart cockpit
+sudo systemctl restart cockpit
 
 install_mangohud
 install_flatpaks
-install_phoronix
+install_pts
 echo "INFO: Finalizing bootstrapping process. Forking apps..."
 
 steam &
