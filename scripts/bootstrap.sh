@@ -2,7 +2,10 @@
 set -eu
 
 source "./shared.sh"
-install_brew
+if [[ ! -d "/home/linuxbrew" ]]; then
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.profile"
+fi
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm sasm)

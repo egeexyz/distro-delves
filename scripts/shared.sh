@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 set -eu
 
-install_brew() {
-	if [[ ! -d "/home/linuxbrew" ]]; then
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-		echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> "$HOME/.bashrc"
-	fi
-}
-
 install_mangohud() {
 	echo "INFO: installing MangoHud"
 	curl -L https://github.com/flightlessmango/MangoHud/releases/download/v0.6.1/MangoHud-0.6.1.tar.gz -o /tmp/MangoHud.tar.gz
@@ -43,5 +36,7 @@ install_pts() {
 		mkdir -p "$HOME/.phoronix-test-suite/test-suites/local/eg-${suite}"
 		cp "./pts/suites/eg-${suite}.xml" "$HOME/.phoronix-test-suite/test-suites/local/eg-${suite}/suite-definition.xml" || true
 		phoronix-test-suite install "eg-${suite}"
+		mkdir -p "$HOME/.config/systemd/user"
+		echo -e "[Unit]\nDescription=${suite}\n[Install]\nWantedBy=default.target\n[Service]\nType=oneshot\nExecStart=/home/linuxbrew/.linuxbrew/bin/phoronix-test-suite batch-run eg-${suite}" > "$HOME/.config/systemd/user/eg-${suite}.service"
 	done
 }
