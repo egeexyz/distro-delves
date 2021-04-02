@@ -5,9 +5,9 @@ source "./shared.sh"
 install_brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-common=(git flatpak curl flatpak steam lutris wine cockpit npm)
-arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 yasm nasam  base-devel vulkan-icd-loader openssh "${common[@]}")
-ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf "${common[@]}")
+common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasam sasam)
+arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh "${common[@]}")
+ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
 
 # Arch-based
 if [ -n "$(which pacman)" ]; then
@@ -18,8 +18,6 @@ if [ -n "$(which pacman)" ]; then
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu --noconfirm
 	sudo pacman -S --noconfirm "${arch[@]}"
-	systemctl enable --now sshd
-	systemctl restart cockpit
 	if [ -z "$(which yay)" ]; then
 		echo "INFO: installing Yay"
 		git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin || true
@@ -61,6 +59,9 @@ else
 	echo "ERROR: Unsuported linux distribution"
 	exit
 fi
+
+systemctl enable --now sshd
+systemctl restart cockpit
 
 install_mangohud
 install_flatpaks
