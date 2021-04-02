@@ -9,15 +9,15 @@
     <Maintainer>Egee</Maintainer>
   </SuiteInformation>
   <Execute>
-    <Test>pts/pybench</Test>
+    <Test>pts/pybench-1.1.3</Test>
   </Execute>
   <Execute>
-    <Test>pts/phpbench</Test>
+    <Test>pts/phpbench-1.1.6</Test>
   </Execute>
   <Execute>
-    <Test>pts/rbenchmark</Test>
+    <Test>pts/rbenchmark-1.0.3</Test>
   </Execute>
   <Execute>
-    <Test>pts/node-octane</Test>
+    <Test>pts/node-octane-1.0.1</Test>
   </Execute>
 </PhoronixTestSuite>

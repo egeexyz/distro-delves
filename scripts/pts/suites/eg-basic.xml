@@ -9,22 +9,22 @@
     <Maintainer>egee</Maintainer>
   </SuiteInformation>
   <Execute>
-    <Test>pts/gputest</Test>
+    <Test>pts/gputest-1.3.2</Test>
     <Arguments>/test=fur /width=1920 /height=1080</Arguments>
     <Description>Test: Furmark - Resolution: 1920 x 1080 - Mode: Windowed</Description>
   </Execute>
   <Execute>
-    <Test>pts/fs-mark</Test>
+    <Test>pts/fs-mark-1.0.2</Test>
     <Arguments>-s 1048576 -n 1000</Arguments>
     <Description>Test: 1000 Files, 1MB Size</Description>
   </Execute>
   <Execute>
-    <Test>pts/sockperf</Test>
+    <Test>pts/sockperf-1.0.1</Test>
     <Arguments>throughput</Arguments>
     <Description>Test: Throughput</Description>
   </Execute>
   <Execute>
-    <Test>pts/mbw</Test>
+    <Test>pts/mbw-1.0.0</Test>
     <Arguments>-t0 1024</Arguments>
     <Description>Test: Memory Copy - Array Size: 1024 MiB</Description>
   </Execute>

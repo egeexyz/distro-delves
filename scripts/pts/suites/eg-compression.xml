@@ -9,15 +9,15 @@
     <Maintainer>egee</Maintainer>
   </SuiteInformation>
   <Execute>
-    <Test>pts/compress-7zip</Test>
+    <Test>pts/compress-7zip-1.7.1</Test>
   </Execute>
   <Execute>
-    <Test>pts/compress-gzip</Test>
+    <Test>pts/compress-gzip-1.2.0</Test>
   </Execute>
   <Execute>
-    <Test>pts/compress-pbzip2</Test>
+    <Test>pts/compress-pbzip2-1.5.0</Test>
   </Execute>
   <Execute>
-    <Test>pts/compres-xz</Test>
+    <Test>pts/compres-xz-1.1.0</Test>
   </Execute>
 </PhoronixTestSuite>
