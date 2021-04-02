@@ -7,6 +7,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 common=(git flatpak curl flatpak steam lutris wine cockpit npm)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 yasm nasam  base-devel vulkan-icd-loader openssh "${common[@]}")
+ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf "${common[@]}")
 
 # Arch-based
 if [ -n "$(which pacman)" ]; then
@@ -43,7 +44,7 @@ elif [ -n "$(which apt-get)" ]; then
 	#fi
 	echo "INFO: updating system & installing packages"
 	sudo apt-get upgrade -y
-	sudo apt-get install -y mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils mesa mesa:i386 flatpak wine lutris build-essential autoconf
+	sudo apt-get install -y "${ubuntu[@]}"
 # fedora/Mageia 8
 elif [ -n "$(which dnf)" ]; then
 	echo "INFO: adding rpm fusion repos"
