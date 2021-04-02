@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>The Development Bench</Title>
+    <Version>1.0.0</Version>
+    <TestType>Processor</TestType>
+    <Description>One Sweet Suite</Description>
+    <Maintainer>Egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/pybench</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/phpbench</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/rbenchmark</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/node-octane</Test>
+  </Execute>
+</PhoronixTestSuite>

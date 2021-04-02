@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>eg-basic</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Description>A benchmark focusing on basic system performance</Description>
+    <Maintainer>egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/gputest</Test>
+    <Arguments>/test=fur /width=1920 /height=1080</Arguments>
+    <Description>Test: Furmark - Resolution: 1920 x 1080 - Mode: Windowed</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/fs-mark</Test>
+    <Arguments>-s 1048576 -n 1000</Arguments>
+    <Description>Test: 1000 Files, 1MB Size</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sockperf</Test>
+    <Arguments>throughput</Arguments>
+    <Description>Test: Throughput</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/mbw</Test>
+    <Arguments>-t0 1024</Arguments>
+    <Description>Test: Memory Copy - Array Size: 1024 MiB</Description>
+  </Execute>
+</PhoronixTestSuite>
