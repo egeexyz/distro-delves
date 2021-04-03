@@ -36,7 +36,7 @@ if [ -n "$(which pacman)" ]; then
 elif [ -n "$(which apt-get)" ]; then
 	echo "INFO: enabling multilib "
 	sudo dpkg --add-architecture i386
-	# $() doesn't work here for some reason
+	# $() doesn't work here for some reason. we only really support Ubuntu at this point anyway
 	#if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
 		echo "INFO: on debian getting lutris from OBS"
 		echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
@@ -70,8 +70,3 @@ sudo systemctl restart cockpit
 install_mangohud
 install_flatpaks
 install_pts
-echo "INFO: Finalizing bootstrapping process. Forking apps..."
-
-steam &
-lutris &
-winecfg &

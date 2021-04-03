@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!--Phoronix Test Suite v10.2.2-->
+<!-- Current State: WORKING -->
 <PhoronixTestSuite>
   <SuiteInformation>
     <Title>The Compession Bench</Title>
