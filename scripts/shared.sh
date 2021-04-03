@@ -24,19 +24,23 @@ install_flatpaks() {
 install_pts() {
 	# Broken: encryption gpu_perf unigine games_oss games_steam
 	suites=(basic compiling encoding compression devel)
+	pts_root="$HOME/.phoronix-test-suite"
 	# brew install gcc
 	# brew install make
 	brew install php
 	brew install phoronix-test-suite
 	yes y | phoronix-test-suite
 
-	cp "./pts/user-config.xml" "$HOME/.phoronix-test-suite/user-config.xml" || true
+	mkdir -p "$HOME/.config/systemd/user"
+	cat ./pts/user-config.xml > "$pts_root/user-config.xml"
 	echo "INFO: Installing test suites. This will take a while..."
 	for suite in "${suites[@]}"; do
-		mkdir -p "$HOME/.phoronix-test-suite/test-suites/local/eg-${suite}"
-		cp "./pts/suites/eg-${suite}.xml" "$HOME/.phoronix-test-suite/test-suites/local/eg-${suite}/suite-definition.xml" || true
+		runner_path="$pts_root/eg-${suite}-runner.sh"
+		mkdir -p "$pts_root/test-suites/local/eg-${suite}"
+		cat "./pts/suites/eg-${suite}.xml" > "$pts_root/test-suites/local/eg-${suite}/suite-definition.xml"
 		phoronix-test-suite install "eg-${suite}"
-		mkdir -p "$HOME/.config/systemd/user"
-		echo -e "[Unit]\nDescription=${suite}\n[Install]\nWantedBy=default.target\n[Service]\nType=oneshot\nExecStart=/home/linuxbrew/.linuxbrew/bin/phoronix-test-suite batch-run eg-${suite}" > "$HOME/.config/systemd/user/eg-${suite}.service"
+		echo -e "[Unit]\nDescription=${suite}\n[Install]\nWantedBy=default.target\n[Service]\nType=simple\nExecStart=${runner_path}" > "$HOME/.config/systemd/user/eg-${suite}.service"
+		echo -e "#!/usr/bin/env bash\n eval \"\$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\" ; /home/linuxbrew/.linuxbrew/bin/phoronix-test-suite batch-run eg-${suite}" > "$runner_path"
+		chmod +x "$runner_path"
 	done
 }
