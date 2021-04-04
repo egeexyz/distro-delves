@@ -65,8 +65,6 @@ else
 	exit
 fi
 
-sudo systemctl restart cockpit
-
-install_mangohud
-install_flatpaks
+#install_mangohud
+#install_flatpaks
 install_pts
