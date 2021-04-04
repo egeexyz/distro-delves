@@ -8,7 +8,7 @@ if [[ ! -d "/home/linuxbrew" ]]; then
 fi
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm sasm)
+common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh "${common[@]}")
 ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
 
