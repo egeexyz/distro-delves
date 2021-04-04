@@ -3,7 +3,7 @@
 <!-- Current State: WORKING -->
 <PhoronixTestSuite>
   <SuiteInformation>
-    <Title>eg-basic</Title>
+    <Title>The Basic Bench</Title>
     <Version>1.0.0</Version>
     <TestType>System</TestType>
     <Description>A benchmark focusing on basic system performance</Description>

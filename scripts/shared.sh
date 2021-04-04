@@ -23,7 +23,7 @@ install_flatpaks() {
 
 install_pts() {
 	# Broken: encryption gpu_perf unigine games_oss games_steam
-	suites=(basic compiling encoding compression devel gpu)
+	suites=(basic compiling encoding compression devel gpu-perf gpu-oss gpu-unigine)
 	pts_root="$HOME/.phoronix-test-suite"
 	# brew install gcc
 	# brew install make
