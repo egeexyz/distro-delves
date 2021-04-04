@@ -54,7 +54,7 @@ elif [ -n "$(which dnf)" ]; then
 	sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 	echo "INFO: updating system & installing packages"
 	sudo dnf upgrade -y
-	sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 mesa.i686 mesa steam
+	sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 steam
 	sudo dnf groupinstall -y "Development Tools" "Development Libraries"
 #opensuse
 elif [ -n "$(which zypper)" ]; then
