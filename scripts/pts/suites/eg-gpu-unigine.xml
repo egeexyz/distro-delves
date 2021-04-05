@@ -5,7 +5,7 @@
   <SuiteInformation>
     <Title>The Unigine GPU Bench</Title>
     <Version>1.0.0</Version>
-    <TestType>Graphics</TestType>
+    <TestType>System</TestType>
     <Description>egee</Description>
     <Maintainer>egee</Maintainer>
   </SuiteInformation>

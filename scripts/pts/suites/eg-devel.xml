@@ -5,7 +5,7 @@
   <SuiteInformation>
     <Title>The Development Bench</Title>
     <Version>1.0.0</Version>
-    <TestType>Processor</TestType>
+    <TestType>System</TestType>
     <Description>One Sweet Suite</Description>
     <Maintainer>Egee</Maintainer>
   </SuiteInformation>

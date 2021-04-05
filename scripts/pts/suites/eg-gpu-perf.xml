@@ -5,7 +5,7 @@
   <SuiteInformation>
     <Title>The Raw GPU Performance Bench</Title>
     <Version>1.0.0</Version>
-    <TestType>Graphics</TestType>
+    <TestType>System</TestType>
     <Maintainer>egee</Maintainer>
   </SuiteInformation>
   <Execute>
