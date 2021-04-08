@@ -55,7 +55,7 @@ elif [ -n "$(which dnf)" ]; then
 #opensuse
 elif [ -n "$(which zypper)" ]; then
 	echo "INFO: updating system & installing packages"
-	sudo zypper install -y flatpak wine lutris steam automake glibc-static-devel libogg-devel yasm nasm libvorbis-devel taglib taglib-extras-devel nodejs15 libopusfile0 libopus-devel
+	sudo zypper install -y flatpak wine lutris steam automake glibc-devel-static libogg-devel yasm nasm libvorbis-devel taglib taglib-extras-devel nodejs15 libopusfile0 libopus-devel
 else
 	echo "ERROR: Unsuported linux distribution"
 	exit
