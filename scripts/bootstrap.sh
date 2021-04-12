@@ -21,12 +21,6 @@ if [ -n "$(which pacman)" ]; then
 	echo "INFO: updating system & installing packages"
 	sudo pacman -Syyu --noconfirm
 	sudo pacman -S --noconfirm "${arch[@]}"
-	if [ -z "$(which yay)" ]; then
-		echo "INFO: installing Yay"
-		git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin || true
-		cd /tmp/yay-bin || exit
-		makepkg -si
-	fi
 	sudo systemctl enable --now sshd
 # ubuntu/debian
 elif [ -n "$(which apt-get)" ]; then
