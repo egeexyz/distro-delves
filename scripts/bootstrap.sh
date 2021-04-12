@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC2016,SC1091
 set -eu
 
 source "./shared.sh"
