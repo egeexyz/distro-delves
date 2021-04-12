@@ -9,9 +9,9 @@ if [[ ! -d "/home/linuxbrew" ]]; then
 fi
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm screen)
+common=(git flatpak curl flatpak steam wine cockpit npm yasm nasm screen)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh linux-zen "${common[@]}")
-ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
+ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine build-essential autoconf openssh-server "${common[@]}")
 
 if [ -n "$(which pacman)" ]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
@@ -23,17 +23,8 @@ if [ -n "$(which pacman)" ]; then
 	sudo pacman -S --noconfirm "${arch[@]}"
 	sudo systemctl enable --now sshd
 elif [ -n "$(which apt-get)" ]; then
-	echo "INFO: enabling multilib "
-	sudo dpkg --add-architecture i386
-	# $() doesn't work here for some reason. we only really support Ubuntu at this point anyway
-	#if [ "$(lsb_release -i)" == "Distributor ID: Ubuntu" ]; then
-		#echo "INFO: on debian getting lutris from OBS"
-		#echo "deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
-		#wget -q https://download.opensuse.org/repositories/home:/strycore/Debian_10/Release.key -O- | sudo apt-key add -
-		#sudo add-apt-repository ppa:kisak/kisak-mesa -y
-		#sudo apt-get update
-	#fi
 	echo "INFO: updating system & installing packages"
+	sudo dpkg --add-architecture i386
 	sudo apt-get upgrade -y
 	sudo apt-get install -y "${ubuntu[@]}"
 	sudo systemctl enable --now ssh
