@@ -29,8 +29,6 @@ elif [ -n "$(which apt-get)" ]; then
 	sudo apt-get install -y "${ubuntu[@]}"
 	sudo systemctl enable --now ssh
 elif [ -n "$(which dnf)" ]; then
-	#echo "INFO: adding rpm fusion repos"
-	#sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 	echo "INFO: updating system & installing packages"
 	sudo dnf upgrade -y
 	sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 steam glibc-static
