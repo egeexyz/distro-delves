@@ -12,7 +12,6 @@ common=(git flatpak curl flatpak steam lutris wine cockpit npm yasm nasm screen)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh linux-zen "${common[@]}")
 ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine lutris build-essential autoconf openssh-server "${common[@]}")
 
-# Arch-based
 if [ -n "$(which pacman)" ]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
 	sudo sed -i 's/#[multilib]/[multilib]/g' /etc/pacman.conf
@@ -22,7 +21,6 @@ if [ -n "$(which pacman)" ]; then
 	sudo pacman -Syyu --noconfirm
 	sudo pacman -S --noconfirm "${arch[@]}"
 	sudo systemctl enable --now sshd
-# ubuntu/debian
 elif [ -n "$(which apt-get)" ]; then
 	echo "INFO: enabling multilib "
 	sudo dpkg --add-architecture i386
@@ -38,7 +36,6 @@ elif [ -n "$(which apt-get)" ]; then
 	sudo apt-get upgrade -y
 	sudo apt-get install -y "${ubuntu[@]}"
 	sudo systemctl enable --now ssh
-# fedora/Mageia 8
 elif [ -n "$(which dnf)" ]; then
 	#echo "INFO: adding rpm fusion repos"
 	#sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -46,15 +43,11 @@ elif [ -n "$(which dnf)" ]; then
 	sudo dnf upgrade -y
 	sudo dnf install -y flatpak vulkan-loader.i686 curl vulkan-loader.x86_64 steam glibc-static
 	sudo dnf groupinstall -y "Development Tools" "Development Libraries"
-#opensuse
 elif [ -n "$(which zypper)" ]; then
 	echo "INFO: updating system & installing packages"
 	sudo zypper install -y flatpak wine lutris steam automake glibc-devel-static libogg-devel yasm nasm libvorbis-devel taglib taglib-extras-devel nodejs15 libopusfile0 libopus-devel
 else
-	echo "ERROR: Unsuported linux distribution"
-	exit
+	echo "ERROR: Unsuported linux distribution" ; exit 1
 fi
 
-#install_mangohud
-#install_flatpaks
 install_pts
