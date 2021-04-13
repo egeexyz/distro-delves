@@ -12,6 +12,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 common=(git flatpak curl flatpak steam wine cockpit npm yasm nasm screen)
 arch=(lib32-mesa lib32-vulkan-icd-loader lib32-libxinerama libstdc++5 base-devel vulkan-icd-loader openssh linux-zen "${common[@]}")
 ubuntu=(mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 vulkan-utils flatpak wine build-essential autoconf openssh-server "${common[@]}")
+opensuse=("${common[@]}" )
 
 if [ -n "$(which pacman)" ]; then
 	echo "INFO: enabling multilib & forcing resync for multilib"
