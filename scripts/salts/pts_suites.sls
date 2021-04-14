@@ -1,4 +1,4 @@
 ---
-/home/egee/.phoronix-test-suite/user-config.xml:
+/home/egee/.phoronix-test-suite/test-suites/local/eg-basic:
   file.managed:
-    - source: salt://files/user-config.xml
+    - source: salt://benchmarks/files/suites/eg-basic.xml
