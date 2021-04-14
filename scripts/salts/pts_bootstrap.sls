@@ -3,7 +3,7 @@ init phoronix test suite:
   cmd.run:
     - runas: egee
     - name: "yes y | phoronix-test-suite"
-    - unless: test -f /home/egee/.phoronix-test-suite/installed-tests/
+    - unless: test -d /home/egee/.phoronix-test-suite/installed-tests/
 
 /home/egee/.phoronix-test-suite/user-config.xml:
   file.managed:
