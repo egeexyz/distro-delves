@@ -8,8 +8,11 @@ install prerequisite packages:
     - pkgs:
         - git
         - gcc
+        - yasm
+        - nasm
         - curl
         - make
+        - cmake
         - screen
         - autoconf
 
