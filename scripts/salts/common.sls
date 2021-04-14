@@ -10,6 +10,7 @@ install prerequisite packages:
         - gcc
         - curl
         - make
+        - screen
         - autoconf
 
 /etc/sudoers:
