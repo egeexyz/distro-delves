@@ -10,3 +10,11 @@ init phoronix test suite:
     - runas: egee
     - source: salt://benchmarks/files/user-config.xml
     - makedirs: True
+
+/home/egee/.phoronix-test-suite:
+  file.directory:
+    - user: egee
+    - group: egee
+    - recurse:
+      - user
+      - group
