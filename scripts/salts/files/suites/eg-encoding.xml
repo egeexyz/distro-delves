@@ -15,9 +15,9 @@
   <Execute>
     <Test>pts/encode-mp3-1.7.4</Test>
   </Execute>
-  <Execute>
+  <!-- <Execute>
     <Test>pts/encode-opus-1.1.1</Test>
-  </Execute>
+  </Execute> -->
   <Execute>
     <Test>pts/vpxenc-3.0.0</Test>
   </Execute>
