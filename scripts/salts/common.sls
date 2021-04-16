@@ -12,9 +12,13 @@ install prerequisite packages:
         - nasm
         - curl
         - make
+        - steam
         - cmake
         - screen
         - autoconf
+        - automake
+        - glibc-devel-static
+        - libvorbis-devel
 
 /etc/sudoers:
   file.append:
