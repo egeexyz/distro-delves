@@ -17,8 +17,8 @@ install prerequisite packages:
         - screen
         - autoconf
         - automake
-        - glibc-devel-static
-        - libvorbis-devel
+        {# - glibc-devel-static
+        - libvorbis-devel #}
 
 /etc/sudoers:
   file.append:
