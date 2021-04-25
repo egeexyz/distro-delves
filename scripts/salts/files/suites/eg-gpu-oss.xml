@@ -5,7 +5,7 @@
   <SuiteInformation>
     <Title>The Open Source Game Bench</Title>
     <Version>1.0.0</Version>
-    <TestType>System</TestType>
+    <TestType>OS</TestType>
     <Maintainer>egee</Maintainer>
   </SuiteInformation>
   <Execute>

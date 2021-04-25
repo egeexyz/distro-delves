@@ -34,3 +34,9 @@
     - runas: egee
     - source: salt://benchmarks/files/suites/eg-games.xml
     - makedirs: True
+
+/home/egee/.phoronix-test-suite/test-suites/local/eg-gpu-test/suite-definition.xml:
+  file.managed:
+    - runas: egee
+    - source: salt://benchmarks/files/suites/eg-gpu-test.xml
+    - makedirs: True
