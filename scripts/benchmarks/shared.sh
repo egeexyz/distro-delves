@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 set -eu
 
 install_mangohud() {
