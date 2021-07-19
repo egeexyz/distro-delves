@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<!-- Current State: BROKEN -->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>The Encryption Bench</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Description>One Sweet Suite</Description>
+    <Maintainer>Egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/blake2</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/gcrypt</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/gnupg</Test>
+  </Execute>
+</PhoronixTestSuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>eg-gpu</Title>
+    <Version>1.0.0</Version>
+    <TestType>OS</TestType>
+    <Description>os</Description>
+    <Maintainer>egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=tess_x64 /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: TessMark - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=fur /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: Furmark - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=pixmark_volplosion /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: Pixmark Volplosion - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=plot3d /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: Plot3D - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+</PhoronixTestSuite>
