@@ -12,7 +12,7 @@
     <Test>pts/build-apache-1.6.1</Test>
   </Execute>
   <Execute>
-    <Test>pts/x264-2.6.1</Test>
+    <Test>pts/git-1.1.0</Test>
   </Execute>
   <Execute>
     <Test>pts/compress-gzip-1.2.0</Test>
