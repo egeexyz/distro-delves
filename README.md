@@ -1,6 +1,7 @@
 # The Distro Delves Repo
 
 [![Youtube](https://img.shields.io/badge/Egee-Youtube-e62117.svg)](https://www.youtube.com/c/Egeeirl)
+[![Build Status](https://www.travis-ci.com/egee-irl/distro-delves.svg?branch=master)](https://www.travis-ci.com/egee-irl/distro-delves)
 
 Welcome to the Distro Delves Github Repository! 👋
 
