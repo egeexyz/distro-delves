@@ -14,15 +14,15 @@ class QueryManager:
         self.disk_usage = psutil.disk_usage("/")
 
     def run(self):
-        print(f"Total Memory In Use:       {self.format_bytes(bytes=self.mem_used.used, fmt='mb')}")
         print(f"Total Disk Usage:          {self.format_bytes(self.disk_usage.used)}")
+        print(f"Total Memory In Use:       {self.format_bytes(bytes=self.mem_used.used, fmt='mb')}")
         print(f"5 Minute CPU Load Average: {self.load_avg[1]}%")
 
     def format_bytes(self, bytes, fmt="gb"):
         if fmt == "gb":
-            return f"{format(int(bytes) / 1073741824, '.2f')}G"
+            return f"{format(int(bytes) / 1073741824, '.0f')}G"
         elif fmt == "mb":
-            return f"{format(int(bytes) / 1024, '.0f')}M"
+            return f"{format(int(bytes) / 1048576, '.0f')}M"
         else:
             print("ERROR: Unknown format type.")
             exit(1)
