@@ -12,16 +12,13 @@ class QueryManager:
         self.temps = psutil.sensors_temperatures()
         self.fans = psutil.sensors_fans()
         self.disk_usage = psutil.disk_usage("/")
-        self.file_system = self.get_filesystem()
 
     def run(self):
-        print(f"Swap Size: {self.format_bytes(self.swap.total)}")
+        print(f"Total Memory In Use: {self.format_bytes(self.mem_used.used)}")
         print(
             f"Total Disk Usage: {self.format_bytes(self.disk_usage.used)} | {self.disk_usage.percent}%"
         )
-        print(f"Memory In Use: {self.format_bytes(self.mem_used.used)}")
-        print(f"Average CPU Load ~5 Minutes: {self.load_avg[1]}%")
-        print(f"File System Type: {self.file_system}")
+        print(f"5 Minute CPU Load Average: {self.load_avg[1]}%")
 
     def format_bytes(self, bytes, type="gb"):
         if type == "gb":
