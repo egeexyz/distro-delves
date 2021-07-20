@@ -6,4 +6,4 @@ install:
   - poetry install
 script:
   - poetry run flake8
-  - poetry run smoke
+  - poetry run querier run
