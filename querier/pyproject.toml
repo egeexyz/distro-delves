@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "querierdd"
-version = "0.1.1"
+version = "0.2.0"
 description = "Query the system and present details in an asthetically pleasing way."
 authors = ["egee-irl <brian@egee.io>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.6"
 click = "^8.0.1"
 psutil = "^5.8.0"
 
