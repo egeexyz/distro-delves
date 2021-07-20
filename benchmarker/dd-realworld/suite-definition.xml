@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>dd-realworld</Title>
+    <Version>1.0.0</Version>
+    <TestType>OS</TestType>
+    <Description>Tests doing real world things</Description>
+    <Maintainer>Egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/build-apache-1.6.1</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/x264-2.6.1</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/compress-gzip-1.2.0</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/unigine-valley-1.1.8</Test>
+    <Arguments>-video_width 1920 -video_height 1080 -video_fullscreen 1 -video_app opengl</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Fullscreen - Renderer: OpenGL</Description>
+  </Execute>
+</PhoronixTestSuite>
