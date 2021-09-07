@@ -1,4 +1,4 @@
-# The Distro Delves Repo
+# Distro Delves Checklist & Scripts
 
 [![Youtube](https://img.shields.io/badge/Egee-Youtube-e62117.svg)](https://www.youtube.com/c/Egeeirl)
 
