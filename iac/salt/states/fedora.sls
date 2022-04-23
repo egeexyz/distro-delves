@@ -1,4 +1,7 @@
 ---
+include:
+  - common
+
 install some packages:
   pkg.installed:
     - pkgs:
