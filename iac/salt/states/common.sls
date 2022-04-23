@@ -9,9 +9,16 @@
   file.managed:
     - source: salt://files/ssh.conf
     - user: {{ user_name }}
+    - makedirs: True
 
-/home/{{ user_name }}/Music/:
+/home/{{ user_name }}/Downloads/:
   file.recurse:
-    - source: salt://files/tests/Music
-    - include_empty: True
+    - source: salt://files/tests/Downloads
+    - makedirs: True
+    - user: {{ user_name }}
+
+/home/{{ user_name }}/Pictures/:
+  file.recurse:
+    - source: salt://files/tests/Pictures
+    - makedirs: True
     - user: {{ user_name }}
