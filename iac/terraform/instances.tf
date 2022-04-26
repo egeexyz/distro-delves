@@ -3,8 +3,8 @@ data "aws_ami" "ubuntu_lts" {
   owners           = ["099720109477"]
 
   filter {
-    name   = "description"
-    values = ["Canonical, Ubuntu, 20.04 LTS, amd64 focal image*"]
+    name   = "AMI ID"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server*"]
   }
 }
 
@@ -22,7 +22,7 @@ resource "aws_security_group" "main" {
     from_port = 0
     to_port   = 0
     protocol  = "-1"
-    cidr_blocks = ["71.8.171.136/32"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
