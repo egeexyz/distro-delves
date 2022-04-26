@@ -3,8 +3,8 @@ data "aws_ami" "ubuntu_lts" {
   owners           = ["099720109477"]
 
   filter {
-    name   = "AMI ID"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server*"]
+    name   = "description"
+    values = ["Canonical, Ubuntu, 22.04 LTS, amd64 jammy image*"]
   }
 }
 
