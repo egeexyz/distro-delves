@@ -1,4 +1,4 @@
-variable "cidr_block" { default = "172.20.0.0/16" }
+variable "cidr_block" { default = "192.20.0.0/16" }
 
 resource "aws_vpc" "primary" {
   cidr_block = var.cidr_block
@@ -35,7 +35,7 @@ resource "aws_route_table_association" "primary" {
 
 resource "aws_subnet" "primary" {
   vpc_id                  = aws_vpc.primary.id
-  cidr_block              = "172.20.68.0/24"
+  cidr_block              = "192.20.68.0/24"
   availability_zone       = "us-west-2d"
   map_public_ip_on_launch = true
 
@@ -64,7 +64,7 @@ resource "aws_route_table_association" "secondary" {
 
 resource "aws_subnet" "secondary" {
   vpc_id                  = aws_vpc.primary.id
-  cidr_block              = "172.20.0.0/24"
+  cidr_block              = "192.20.0.0/24"
   availability_zone       = "us-west-2c"
   map_public_ip_on_launch = true
 
