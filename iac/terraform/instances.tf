@@ -13,11 +13,12 @@ resource "aws_key_pair" "ssh_key" {
   public_key = file("~/.ssh/id_rsa.pub")
 }
 
-resource "aws_security_group" "main" {
-  name        = "sg_main"
-  description = "A delvers security group"
-  vpc_id      = aws_vpc.main.id
+resource "aws_security_group" "primary" {
+  name        = "primary-delve"
+  description = "Delvers security group"
+  vpc_id      = aws_vpc.primary.id
 
+  # Wide open baby
   ingress {
     from_port = 0
     to_port   = 0
@@ -33,20 +34,18 @@ resource "aws_security_group" "main" {
   }
 }
 
-
-resource "aws_spot_instance_request" "master" {
-  vpc_security_group_ids      = [aws_security_group.main.id]
+resource "aws_spot_instance_request" "primary" {
+  vpc_security_group_ids      = [aws_security_group.primary.id]
   ami                         = data.aws_ami.ubuntu_lts.id
   key_name                    = aws_key_pair.ssh_key.id
-  subnet_id                   = aws_subnet.main.id
-  spot_price                  = "0.007"
+  subnet_id                   = aws_subnet.primary.id
+  spot_price                  = "0.020"
   spot_type                   = "one-time"
-  instance_type               = "t3a.small"
+  instance_type               = "t3a.medium"
   wait_for_fulfillment        = true
   associate_public_ip_address = true
 
   tags = {
-    Name = "delve-master"
+    Name = "Minecraft Maybe"
   }
-  depends_on = [aws_internet_gateway.main]
 }
