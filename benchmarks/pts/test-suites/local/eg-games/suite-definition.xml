@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<!-- Current State: WORKING -->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>The Open Source Game Bench</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Maintainer>egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/etlegacy-1.1.0</Test>
+    <Arguments>+set r_customwidth 1920 +set r_customheight 1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/xonotic-1.5.2</Test>
+    <Arguments>+vid_width $VIDEO_WIDTH +vid_height $VIDEO_HEIGHT +exec effects-high.cfg</Arguments>
+    <Description>Resolution: $VIDEO_WIDTH x $VIDEO_HEIGHT - Effects Quality: High</Description>
+  </Execute>
+  <!-- <Execute>
+    <Test>pts/tesseract-1.1.0</Test>
+    <Arguments>-w1920 -h1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+  </Execute> -->
+  <Execute>
+    <Test>pts/supertuxkart-1.6.0</Test>
+    <Arguments>--screensize=1920x1080 --fullscreen --enable-glow --enable-bloom --enable-light-shaft --enable-dof --disable-gi --enable-gfx --enable-motion-blur --enable-mlaa --enable-ssao --enable-ibl --enable-hd-textures --enable-dynamic-lights --anisotropic=16 --shadows=512 --numkarts=1 --track=zengarden</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Fullscreen - Graphics Effects: High - Karts: 1 - Scene: Zen Garden</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/unigine-tropics-1.6.4</Test>
+    <Arguments>-video_width 1920 -video_height 1080 -video_fullscreen 1</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+</PhoronixTestSuite>

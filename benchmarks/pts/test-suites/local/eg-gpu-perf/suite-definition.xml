@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.2.2-->
+<!-- Current State: WORKING -->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>The Raw GPU Performance Bench</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Maintainer>egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/betsy-1.0.0</Test>
+    <Arguments>--codec=etc1 --quality=2</Arguments>
+    <Description>Codec: ETC1 - Quality: Highest</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/betsy-1.0.0</Test>
+    <Arguments>--codec=etc2_rgb --quality=2</Arguments>
+    <Description>Codec: ETC2 RGB - Quality: Highest</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=tess_x64 /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: TessMark - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/gputest-1.3.2</Test>
+    <Arguments>/test=plot3d /width=1920 /height=1080 /fullscreen</Arguments>
+    <Description>Test: Plot3D - Resolution: 1920 x 1080 - Mode: Fullscreen</Description>
+  </Execute>
+</PhoronixTestSuite>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.4.0-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>yeet</Title>
+    <Version>1.0.0</Version>
+    <TestType>Disk</TestType>
+    <Description>egee</Description>
+    <Maintainer>egee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/fs-mark-1.0.2</Test>
+    <Arguments>-s 1048576 -n 4000 -D 32</Arguments>
+    <Description>Test: 4000 Files, 32 Sub Dirs, 1MB Size</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sqlite-2.1.0</Test>
+    <Arguments>64</Arguments>
+    <Description>Threads / Copies: 128</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pgbench-1.10.2</Test>
+    <Arguments>-s 1000 -c 100</Arguments>
+    <Description>Scaling Factor: 1000 - Clients: 100 - Mode: Read Write</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/postmark-1.1.2</Test>
+  </Execute>
+</PhoronixTestSuite>
