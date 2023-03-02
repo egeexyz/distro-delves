@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+require_relative '../lib/helpers.rb'
+require_relative '../lib/gui.rb'
+
+question("Hi Egee!\nWant me to run some benchmarks on this machine?")
+info("Great!\nSit tight and let me get things going.")
+timings = run_cpu_benchmarks()
+info("All done!\nBy the way, it took #{timings.round(4)} seconds\nfor me to complete the file transfer.")

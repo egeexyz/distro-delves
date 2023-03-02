@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+# require 'yaml'
+# require_relative '../lib/play.rb'
+# require_relative '../lib/install.rb'
+require_relative '../lib/helpers.rb'
+require_relative '../lib/gui.rb'
+
+# game_index    = YAML.load_file('data/lookup.yaml')
+# game_name     = show_game_list(game_index)
+# game_platform = game_index['supported_games'][game_name]['platform']
+# game_exe      = game_index['supported_games'][game_name]['executable']
+
+question("Hi Egee!\nThinking of delving a distro today?")
+info("Great!\nLet me copy the things over so you can begin testing.")
+timings = install_tests()
+info("All done!\nBy the way, it took #{timings.round(4)} seconds\nfor me to complete the file transfer.")
