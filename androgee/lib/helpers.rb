@@ -20,12 +20,13 @@ end
 # and return the realtime for doing so.
 def install_tests
   time = Benchmark.realtime do
-    FileUtils.cp_r('../../test_files/Code', "#{ENV['HOME']}/Tmp")
-    FileUtils.cp_r('../../test_files/Documents', "#{ENV['HOME']}/Tmp")
-    FileUtils.cp_r('../../test_files/Downloads', "#{ENV['HOME']}/Tmp")
-    FileUtils.cp_r('../../test_files/Music', "#{ENV['HOME']}/Tmp")
-    FileUtils.cp_r('../../test_files/Videos', "#{ENV['HOME']}/Tmp")
-    FileUtils.cp_r('../../test_files/Pictures', "#{ENV['HOME']}/Tmp")
+    FileUtils.cp_r('../../test_files/Apps', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Code', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Documents', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Downloads', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Music', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Videos', "#{ENV['HOME']}")
+    FileUtils.cp_r('../../test_files/Pictures', "#{ENV['HOME']}")
   end
   return time
 end
