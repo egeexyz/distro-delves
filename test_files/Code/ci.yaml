@@ -1,0 +1,72 @@
+# From https://gitlab.com/renovate-bot/renovate-runner/-/blob/main/.gitlab-ci.yml
+include: '/templates/renovate-dind.gitlab-ci.yml'
+
+variables:
+  RENOVATE_GIT_AUTHOR: Renovate Bot <bot@renovateapp.com>
+
+stages:
+  - test
+  - deploy
+  - release
+
+workflow:
+  rules:
+    # Don't build push pipeline when open MR and not renovate branch
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_COMMIT_BRANCH !~ /^renovate\//
+      when: never
+    # Don't build MR pipeline when renovate branch
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_BRANCH =~ /^renovate\//
+      when: never
+    # Don't build tags
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+
+renovate:dry-run:
+  script:
+    - renovate --dry-run=full $RENOVATE_EXTRA_FLAGS
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - when: always
+
+lint:
+  image: renovate/node:18.12.0@sha256:e393a5b2cbf5b849895daea5d5ef4c234f27aded98f6fa505d7020c84a3d6fc7
+  services: []
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run prettier
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - when: always
+
+release:
+  image: renovate/node:18.12.0@sha256:e393a5b2cbf5b849895daea5d5ef4c234f27aded98f6fa505d7020c84a3d6fc7
+  stage: release
+  services: []
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  variables:
+    GIT_AUTHOR_EMAIL: bot@renovateapp.com
+    GIT_COMMITTER_EMAIL: bot@renovateapp.com
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - git config --global --add safe.directory $PWD
+    - npx --no-install semantic-release
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
