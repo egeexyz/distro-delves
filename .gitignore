@@ -1,3 +1,5 @@
 .terraform
 installed-tests
 test-results
+test_files/Videos
+test_files/Pictures
